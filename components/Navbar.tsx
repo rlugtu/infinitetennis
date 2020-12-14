@@ -1,6 +1,6 @@
 import { slide as Menu } from 'react-burger-menu'
 import {useState} from 'react'
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const Navbar = () => {
     const[isOpen, setIsOpen] = useState(false)
