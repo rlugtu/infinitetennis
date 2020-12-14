@@ -11,19 +11,21 @@ export default function Home() {
     <div className="bodyContainer">
       <Navbar />
       <Banner />
-      <div className="programsContainer">
-        <div className="singleProgramContainer sp1">
-          <div className="imageOverlay"></div>
-          <h1 className="programText">Our Programs</h1>
-        </div>
-        <div className="singleProgramContainer sp2">
-          <div className="imageOverlay"></div>
-          <h1 className="programText">Our Team</h1>
-        </div>
-        <div className="singleProgramContainer sp3">
-          <div className="imageOverlay"></div>
-          <h1 className="programText">Our Philosophy</h1>
-        </div>
+      <div>
+        <div className="programsContainer">
+            <div className="singleProgramContainer sp1">
+              <div className="imageOverlay"></div>
+              <h1 className="programText">Our Programs</h1>
+            </div>
+            <div className="singleProgramContainer sp2">
+              <div className="imageOverlay"></div>
+              <h1 className="programText">Our Team</h1>
+            </div>
+            <div className="singleProgramContainer sp3">
+              <div className="imageOverlay"></div>
+              <h1 className="programText">Our Philosophy</h1>
+            </div>
+          </div>
       </div>
       <Footer />
     </div>
