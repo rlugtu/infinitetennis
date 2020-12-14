@@ -21,28 +21,28 @@ const Navbar = () => {
                     <Link href="/">
                         <a className="mobileNavLink">Home</a>
                     </Link>
-                    <Link href="/location">
+                    <Link href="/">
                         <a className="mobileNavLink">Contact</a>
                     </Link>
-                    <Link href="/location">
+                    <Link href="/">
                         <a className="mobileNavLink">Programs</a>
                     </Link>
-                    <Link href="/location">
-                        <a className="mobileNavLink">Coaches</a>
+                    <Link href="/">
+                        <a className="mobileNavLink">Team</a>
                     </Link>
                 </Menu>
                 <ul className="navList">
                     <Link href="/">
                         <a className="navLink">Home</a>
                     </Link>
-                    <Link href="/location">
+                    <Link href="/">
                         <a className="navLink">Contact</a>
                     </Link>
-                    <Link href="/location">
+                    <Link href="/">
                         <a className="navLink">Programs</a>
                     </Link>
-                    <Link href="/location">
-                        <a className="navLink">Coaches</a>
+                    <Link href="/">
+                        <a className="navLink">Team</a>
                     </Link>
                 </ul>
             </div>

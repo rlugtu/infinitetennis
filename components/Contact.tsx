@@ -32,7 +32,7 @@ const ContactForm = () => {
                         <TextField fullWidth={true} variant="filled" type="text" name="email" />
                     </div>
                 <div className="contactSubmitContainer">
-                    <Button variant="outlined">Submit</Button>
+                    <Button className="contactSubmit"variant="outlined">Submit</Button>
                 </div>
                 
             </form>

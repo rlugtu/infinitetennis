@@ -7,7 +7,7 @@ const Banner = () => {
             layout="fill"
             objectFit="cover"
             /> */}
-            <h1 className="bannerText">Welcome to our site</h1>
+            <h1 className="bannerText">Infinite Future Tennis</h1>
         </div>
     )
 }

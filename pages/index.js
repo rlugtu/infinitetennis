@@ -33,9 +33,9 @@ export default function Home() {
               <Image 
               src='/contactpic.jpg'
               className="image"
-              layout='fill'/>
+              height={400}
+              width={400}/>
             </div>
-            
           </div>
       </div>
       <Footer />
