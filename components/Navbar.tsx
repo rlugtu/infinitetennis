@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <div className="navBar">
             <div className="navLogo">
-                <h2>IFT</h2>
+                <h2>Logo</h2>
             </div>
             <div className="navOptions">
                 <Menu 
