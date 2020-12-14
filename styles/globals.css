@@ -169,3 +169,82 @@ ul {
   position: absolute;
   opacity: 0.3;
 }
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(238, 238, 238);
+  margin-top: 20px;
+}
+
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(142, 181, 218);
+  padding: 20px 60px;
+  width: 40%;
+}
+@media only screen and (min-width: 768px) {
+  .formLine1 {
+    display: flex;
+    width: 100%;
+  }
+  .formLine1 * {
+    /* margin-right: 20px; */
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contactFormContainer {
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+  }
+}
+.contactForm {
+  width: 100%;
+}
+.contactFormContainer h1 {
+  margin: 0;
+}
+.contactSubmitContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.contactFullWidthText {
+  width: 100%;
+}
+.imageContainer {
+  position: relative;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  z-index: 0;
+}
+.image {
+  object-fit: cover;
+}
+
+.MuiInputBase-input {
+  background: white !important;
+  height: 20px !important;
+  width: 100% !important;
+}
+.MuiFilledInput-input {
+  padding: 5px !important;
+  width: 100% !important;
+}
+@media only screen and (min-width: 768px) {
+  .inputFirstName {
+    padding-right: 10px !important;
+  }
+  .inputLastName {
+    padding-left: 10px !important;
+  }
+}
