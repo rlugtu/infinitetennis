@@ -1,6 +1,6 @@
 import Navbar from '../components/Navbar'
 import styles from '../components/modulecss/About.module.css'
-import Footer from '../components/Footer.tsx'
+import Footer from '../components/Footer'
 import Image from "next/image"
 
 const About = () => {
