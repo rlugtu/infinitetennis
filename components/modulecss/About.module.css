@@ -117,4 +117,7 @@
   .viewMore2 {
     justify-content: center;
   }
+  .viewMoreButton {
+    font-size: 1rem;
+  }
 }

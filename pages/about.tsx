@@ -16,7 +16,8 @@ const About = () => {
                         <div className={styles.aboutHeader}>
                             <h1 className={styles.textHeaders}>Our Philosophy</h1>
                             <div className={styles.     aboutHeaderImage}>
-                                <Image 
+                                <Image
+                                className="image" 
                                 src="/programphoto1.jpeg"
                                 layout="fill"
                                 />
@@ -37,6 +38,7 @@ const About = () => {
                                 <h1 className={styles.textHeaders}>Coaches</h1>
                                 <div className={styles.     aboutHeaderImage}>
                                     <Image 
+                                    className="image"
                                     src="/programphoto1.jpeg"
                                     layout="fill"
                                     />
@@ -48,6 +50,7 @@ const About = () => {
                                 <h1 className={styles.textHeaders}>Alumni</h1>
                                 <div className={styles.     aboutHeaderImage}>
                                     <Image 
+                                    className="image"
                                     src="/programphoto1.jpeg"
                                     layout="fill"
                                     />
