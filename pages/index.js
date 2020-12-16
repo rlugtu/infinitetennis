@@ -1,13 +1,53 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import MobileDetect from "mobile-detect";
+import {useState} from 'react'
 
 // Components
 import Navbar from '../components/Navbar.tsx'
 import Banner from '../components/Banner.tsx'
 import Footer from '../components/Footer.tsx'
 import Contact from '../components/Contact.tsx'
-export default function Home() {
+function Home({props}) {
+  Home.getInitialProps = async ({ req }) => {
+    let userAgent;
+    let deviceType;
+    if (req) {
+      userAgent = req.headers["user-agent"];
+    } else {
+      userAgent = navigator.userAgent;
+    }
+    const md = new MobileDetect(userAgent);
+    if (md.tablet()) {
+      deviceType = "tablet";
+    } else if (md.mobile()) {
+      deviceType = "mobile";
+    } else {
+      deviceType = "desktop";
+    }
+    return { deviceType: deviceType };
+  }
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+      slidesToSlide: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 600 },
+      items: 2,
+      slidesToSlide: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1
+    }
+  };
   return (
     <div className="bodyContainer">
       <Navbar />
@@ -30,12 +70,40 @@ export default function Home() {
             <div className="videoFeedContainer">
               <h1 className="videoHeader">Inside Our Program</h1>
               <div className="videoSliderContainer">
-                <Image 
-                  src='/contactpic.jpg'
-                  className="video"
-                  height={200}
-                  width={300}/>
+              <Carousel
+                responsive={responsive}
+                ssr
+                showDots
+                infinite
+                containerClass="container-with-dots"
+                itemClass="image-item"
+                deviceType="desktop">
+                 <Image 
+                    src='/contactpic.jpg'
+                    className="video"
+                    height={200}
+                    width={300}
+                    />
+                 <Image 
+                    src='/programphoto1.jpeg'
+                    className="video"
+                    height={200}
+                    width={300}/>
+                  
                   <Image 
+                    src='/contactpic.jpg'
+                    className="video"
+                    height={200}
+                    width={300}/>
+                  
+                  <Image 
+                    src='/contactpic.jpg'
+                    className="video"
+                    height={200}
+                    width={300}/>
+                  
+                </Carousel>
+                  {/* <Image 
                   src='/contactpic.jpg'
                   className="video"
                   height={200}
@@ -49,7 +117,7 @@ export default function Home() {
                   src='/contactpic.jpg'
                   className="video"
                   height={200}
-                  width={300}/>
+                  width={300}/> */}
               </div>
             </div>
             <div className="contactContainer">
@@ -67,3 +135,5 @@ export default function Home() {
     </div>
   )
 }
+
+export default Home

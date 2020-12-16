@@ -241,7 +241,11 @@ a:hover {
   flex-wrap: wrap;
   margin: 10px 0;
 }
-
+/* VIDEO SECTION */
+.videoImageContainer {
+  height: 200px;
+  width: 300px;
+}
 /* CONTACT FORM  */
 .imageOverlay {
   height: 100%;
