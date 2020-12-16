@@ -12,7 +12,6 @@ export default function Home() {
     <div className="bodyContainer">
       <Navbar />
       <Banner />
-      <div>
         <div className="programsContainer">
             <div className="singleProgramContainer sp1">
               <div className="imageOverlay"></div>
@@ -37,7 +36,6 @@ export default function Home() {
               width={400}/>
             </div>
           </div>
-      </div>
       <Footer />
     </div>
   )

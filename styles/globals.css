@@ -5,13 +5,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   width: 100%;
-  height: 100%;
-  background-color: rgb(42, 93, 155);
+  height: 100%-100px;
+  background-color: rgb(238, 238, 238);
   z-index: 100;
+  position: relative;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -29,6 +29,13 @@ ul {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 100%;
+}
+.pageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   height: 100%;
 }
 .navBar {
@@ -41,20 +48,30 @@ ul {
   position: fixed;
   top: 0;
   background-color: rgb(42, 93, 155);
+  z-index: 1000;
 }
 .navLogo {
   display: flex;
   color: white;
 }
-.navList {
-  display: flex;
-}
+
 .navLink {
   margin: 0 10px;
   cursor: pointer;
   font-size: 1.1rem;
   color: white;
 }
+a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+.navOptions {
+  display: flex;
+  align-items: center;
+}
+
+/* MOBILE NAV */
 .bm-burger-button {
   display: none;
 }
@@ -62,19 +79,45 @@ ul {
   background: #373a47;
   color: black;
 }
+
 @media only screen and (min-width: 600px) {
+  .mobileNav {
+    display: none;
+  }
   .mobileNavLink {
     display: none;
   }
 }
 @media only screen and (max-width: 600px) {
   .navBar {
-    justify-content: flex-start;
     padding: 0 10px;
   }
-  .navLink {
-    display: none;
+  .navOptions {
+    justify-content: center;
   }
+  .navList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 40px;
+    left: -100%;
+    opacity: 0.9;
+    transition: all 0.5 ease;
+  }
+  .navList.active {
+    left: 0;
+    transition: all 0, 5s ease;
+    background-color: rgb(42, 93, 155);
+    padding-left: 0;
+    position: fixed;
+    height: 100vh;
+  }
+  .navLink {
+    font-size: 1.5rem;
+  }
+
   .bm-burger-button {
     display: flex;
     position: fixed;
@@ -94,15 +137,14 @@ ul {
     flex-direction: column;
   }
   .mobileNavLink {
-    color: black;
+    color: white;
     font-size: 2rem;
     margin: 0.2rem;
   }
   .bm-overlay {
     top: 3.7rem;
-    background: rgb(238, 238, 238, 0.9) !important;
+    background: rgb(42, 93, 155, 0.9) !important;
     left: 0;
-    z-index: 1000 !important;
     height: 100% !important;
   }
   .bm-burger-bars {
@@ -113,7 +155,6 @@ ul {
     left: 0;
     width: 100% !important;
     position: relative;
-    z-index: 10000;
   }
 }
 
@@ -144,7 +185,6 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  z-index: 1;
 }
 
 .singleProgramContainer {
@@ -155,7 +195,6 @@ ul {
   min-width: 300px;
   flex-grow: 1;
   position: relative;
-  /* z-index: ; */
 }
 
 .sp1,
@@ -190,7 +229,6 @@ ul {
   width: 100%;
   padding: 20px;
   background-color: rgb(238, 238, 238);
-  height: 500px;
 }
 
 .contactFormContainer {
@@ -201,6 +239,7 @@ ul {
   width: 40%;
   min-height: 340px;
 }
+
 @media only screen and (min-width: 768px) {
   .formLine1 {
     display: flex;
@@ -229,7 +268,7 @@ ul {
   margin: 0;
 }
 .contactFormContainer p {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .contactSubmitContainer {
@@ -243,10 +282,9 @@ ul {
 }
 .imageContainer {
   position: relative;
-  width: 400px;
+  width: 370px;
   height: auto;
   overflow: hidden;
-  z-index: 0;
 }
 .image {
   object-fit: cover;
@@ -254,9 +292,8 @@ ul {
 
 .MuiInputBase-input {
   background: white !important;
-  height: 20px !important;
+  /* height: 20px !important; */
   width: 100% !important;
-  z-index: 100;
 }
 .MuiFilledInput-input,
 .contactSubmit {
@@ -265,8 +302,11 @@ ul {
 .contactSubmit,
 .MuiButton-label {
   background-color: white !important;
-  z-index: 0;
   width: 30% !important;
+}
+.textBox {
+  padding: 0 !important;
+  width: 100% !important;
 }
 @media only screen and (min-width: 768px) {
   .inputFirstName {
@@ -275,4 +315,10 @@ ul {
   .inputLastName {
     padding-left: 10px !important;
   }
+}
+
+.footerContainer {
+  background-color: rgb(42, 93, 155, 1);
+  width: 100%;
+  bottom: 0;
 }

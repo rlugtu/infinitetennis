@@ -1,0 +1,120 @@
+.aboutPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.pageHeader {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 850px) {
+  /* .aboutContainer {
+    max-width: 1200px;
+  } */
+}
+.aboutBanner {
+  /* min-height: 300px;
+  background-color: green; */
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 10px;
+}
+.aboutContainer {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .about1,
+  .about2,
+  .about3 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.about1,
+.about2,
+.about3 {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  /* margin: 10px 0; */
+  padding: 40px;
+}
+.about1 {
+  background-color: lightblue;
+}
+.about2 {
+  background-color: rgb(184, 184, 184);
+}
+.about3 {
+  background-color: rgb(216, 176, 127);
+}
+.aboutHeader {
+  width: 300px;
+}
+.aboutHeaderImage {
+  width: 300px;
+  height: 200px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.textHeaders {
+  margin: 0;
+}
+
+.aboutText {
+  margin: 0 20px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.viewMore1 {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+.viewMore2 {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.viewMoreButton {
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: rgb(142, 164, 189);
+  margin: 0;
+  color: black;
+  font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  .aboutHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .aboutHeaderImage {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin-top: 10px;
+  }
+  .aboutText {
+    order: 2;
+  }
+  .viewMore1,
+  .viewMore2 {
+    justify-content: center;
+  }
+}

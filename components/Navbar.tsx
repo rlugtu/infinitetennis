@@ -2,6 +2,9 @@ import { slide as Menu } from 'react-burger-menu'
 import {useState} from 'react'
 import Link from 'next/link'
 
+import '@fortawesome/fontawesome-free/css/all.css';
+
+
 const Navbar = () => {
     const[isOpen, setIsOpen] = useState(false)
     const toggleBurger = () => {
@@ -21,28 +24,28 @@ const Navbar = () => {
                     <Link href="/">
                         <a className="mobileNavLink">Home</a>
                     </Link>
-                    <Link href="/">
-                        <a className="mobileNavLink">Contact</a>
+                    <Link href="/about">
+                        <a className="mobileNavLink">About</a>
                     </Link>
                     <Link href="/">
                         <a className="mobileNavLink">Programs</a>
                     </Link>
                     <Link href="/">
-                        <a className="mobileNavLink">Team</a>
+                        <a className="mobileNavLink">Contact</a>
                     </Link>
                 </Menu>
                 <ul className="navList">
                     <Link href="/">
                         <a className="navLink">Home</a>
                     </Link>
-                    <Link href="/">
-                        <a className="navLink">Contact</a>
+                    <Link href="/about">
+                        <a className="navLink">About</a>
                     </Link>
                     <Link href="/">
                         <a className="navLink">Programs</a>
                     </Link>
                     <Link href="/">
-                        <a className="navLink">Team</a>
+                        <a className="navLink">Contact</a>
                     </Link>
                 </ul>
             </div>
