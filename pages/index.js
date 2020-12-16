@@ -12,30 +12,32 @@ export default function Home() {
     <div className="bodyContainer">
       <Navbar />
       <Banner />
+      <div className="bodyContent">
         <div className="programsContainer">
-            <div className="singleProgramContainer sp1">
-              <div className="imageOverlay"></div>
-              <h1 className="programText">Our Programs</h1>
+              <div className="singleProgramContainer sp1">
+                <div className="imageOverlay"></div>
+                <h1 className="programText">Our Programs</h1>
+              </div>
+              <div className="singleProgramContainer sp2">
+                <div className="imageOverlay"></div>
+                <h1 className="programText">Our Team</h1>
+              </div>
+              <div className="singleProgramContainer sp3">
+                <div className="imageOverlay"></div>
+                <h1 className="programText">Our Philosophy</h1>
+              </div>
             </div>
-            <div className="singleProgramContainer sp2">
-              <div className="imageOverlay"></div>
-              <h1 className="programText">Our Team</h1>
+            <div className="contactContainer">
+              <Contact />
+              <div className="imageContainer">
+                <Image 
+                src='/contactpic.jpg'
+                className="image"
+                height={400}
+                width={400}/>
+              </div>
             </div>
-            <div className="singleProgramContainer sp3">
-              <div className="imageOverlay"></div>
-              <h1 className="programText">Our Philosophy</h1>
-            </div>
-          </div>
-          <div className="contactContainer">
-            <Contact />
-            <div className="imageContainer">
-              <Image 
-              src='/contactpic.jpg'
-              className="image"
-              height={400}
-              width={400}/>
-            </div>
-          </div>
+        </div>
       <Footer />
     </div>
   )

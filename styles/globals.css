@@ -5,10 +5,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   width: 100%;
-  height: 100%-100px;
+  min-height: 100%;
   background-color: rgb(238, 238, 238);
   z-index: 100;
-  position: relative;
 }
 
 a {
@@ -24,12 +23,17 @@ ul {
 #__next {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 .bodyContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
+}
+.bodyContent {
   min-height: 100%;
+  position: relative;
 }
 .pageContainer {
   display: flex;
@@ -85,6 +89,9 @@ a:hover {
     display: none;
   }
   .mobileNavLink {
+    display: none;
+  }
+  #bm-menu-wrap {
     display: none;
   }
 }
@@ -320,5 +327,8 @@ a:hover {
 .footerContainer {
   background-color: rgb(42, 93, 155, 1);
   width: 100%;
+  right: 0;
   bottom: 0;
+  left: 0;
+  text-align: center;
 }

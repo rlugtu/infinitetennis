@@ -34,7 +34,7 @@ const About = () => {
                                     <h1 className={styles.viewMoreButton}>View our Team here!</h1>
                                 </div>
                             </div>
-                        <div className={styles.aboutHeader}>
+                        <div className={styles.aboutHeader2}>
                                 <h1 className={styles.textHeaders}>Coaches</h1>
                                 <div className={styles.     aboutHeaderImage}>
                                     <Image 
@@ -43,7 +43,7 @@ const About = () => {
                                     layout="fill"
                                     />
                                 </div>
-                            </div>
+                        </div>
                     </div>
                     <div className={styles.about3}>
                         <div className={styles.aboutHeader}>
