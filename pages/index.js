@@ -27,6 +27,31 @@ export default function Home() {
                 <h1 className="programText">Our Philosophy</h1>
               </div>
             </div>
+            <div className="videoFeedContainer">
+              <h1 className="videoHeader">Inside Our Program</h1>
+              <div className="videoSliderContainer">
+                <Image 
+                  src='/contactpic.jpg'
+                  className="video"
+                  height={200}
+                  width={300}/>
+                  <Image 
+                  src='/contactpic.jpg'
+                  className="video"
+                  height={200}
+                  width={300}/>
+                  <Image 
+                  src='/contactpic.jpg'
+                  className="video"
+                  height={200}
+                  width={300}/>
+                   <Image 
+                  src='/contactpic.jpg'
+                  className="video"
+                  height={200}
+                  width={300}/>
+              </div>
+            </div>
             <div className="contactContainer">
               <Contact />
               <div className="imageContainer">

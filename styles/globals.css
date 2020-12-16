@@ -220,6 +220,29 @@ a:hover {
   background-image: url("../public/programphoto3.jpeg");
 }
 
+/* VIDEO FEED */
+
+.videoFeedContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(216, 183, 110);
+  padding: 20px 0;
+}
+.videoHeader {
+  color: black;
+  margin: 0;
+}
+.videoSliderContainer {
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+/* CONTACT FORM  */
 .imageOverlay {
   height: 100%;
   width: 100%;
