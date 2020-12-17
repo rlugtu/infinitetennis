@@ -11,8 +11,8 @@ import Navbar from '../components/Navbar.tsx'
 import Banner from '../components/Banner.tsx'
 import Footer from '../components/Footer.tsx'
 import Contact from '../components/Contact.tsx'
-function Home({props}) {
-  Home.getInitialProps = async ({ req }) => {
+const Home = ( {props} ) => {
+  Home.getInitialProps = ({ req }) => {
     let userAgent;
     let deviceType;
     if (req) {
@@ -28,12 +28,12 @@ function Home({props}) {
     } else {
       deviceType = "desktop";
     }
-    return { deviceType: deviceType };
+    return { deviceType };
   }
 
   const responsive = {
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 6000, min: 1024 },
       items: 4,
       slidesToSlide: 3
     },
@@ -43,7 +43,7 @@ function Home({props}) {
       slidesToSlide: 2
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 600, min: 0 },
       items: 1,
       slidesToSlide: 1
     }
@@ -75,49 +75,32 @@ function Home({props}) {
                 ssr
                 showDots
                 infinite
+                swipeable={true}
                 containerClass="container-with-dots"
                 itemClass="image-item"
-                deviceType="desktop">
-                 <Image 
+                deviceType="desktop"
+                containerClass="carousel-container"
+                itemClass="carousel-item"
+                >
+                    <Image 
+                      src='/contactpic.jpg'
+                      className="video"
+                      layout="fill"
+                      />
+                    <Image 
+                      src='/programphoto1.jpeg'
+                      className="video"
+                      layout="fill"/>
+                    <Image 
+                      src='/contactpic.jpg'
+                      className="video"
+                      layout="fill"/>                  
+                    <Image 
                     src='/contactpic.jpg'
                     className="video"
-                    height={200}
-                    width={300}
-                    />
-                 <Image 
-                    src='/programphoto1.jpeg'
-                    className="video"
-                    height={200}
-                    width={300}/>
-                  
-                  <Image 
-                    src='/contactpic.jpg'
-                    className="video"
-                    height={200}
-                    width={300}/>
-                  
-                  <Image 
-                    src='/contactpic.jpg'
-                    className="video"
-                    height={200}
-                    width={300}/>
-                  
+                    layout="fill"/>                  
+                 
                 </Carousel>
-                  {/* <Image 
-                  src='/contactpic.jpg'
-                  className="video"
-                  height={200}
-                  width={300}/>
-                  <Image 
-                  src='/contactpic.jpg'
-                  className="video"
-                  height={200}
-                  width={300}/>
-                   <Image 
-                  src='/contactpic.jpg'
-                  className="video"
-                  height={200}
-                  width={300}/> */}
               </div>
             </div>
             <div className="contactContainer">
