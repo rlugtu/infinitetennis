@@ -11,6 +11,7 @@ import Navbar from '../components/Navbar.tsx'
 import Banner from '../components/Banner.tsx'
 import Footer from '../components/Footer.tsx'
 import Contact from '../components/Contact.tsx'
+
 const Home = ( {props} ) => {
   Home.getInitialProps = ({ req }) => {
     let userAgent;
@@ -39,7 +40,7 @@ const Home = ( {props} ) => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 600 },
-      items: 2,
+      items: 3,
       slidesToSlide: 2
     },
     mobile: {
@@ -70,6 +71,7 @@ const Home = ( {props} ) => {
             <div className="videoFeedContainer">
               <h1 className="videoHeader">Inside Our Program</h1>
               <div className="videoSliderContainer">
+                {/* <p>{props.deviceType}</p> */}
               <Carousel
                 responsive={responsive}
                 ssr

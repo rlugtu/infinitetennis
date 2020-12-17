@@ -173,21 +173,34 @@ a:hover {
   background-size: cover;
   padding: 20px;
   margin-top: 60px;
+  display: flex;
 }
+
+.bannerText,
+.bannerText2,
+.programText {
+  color: white;
+  z-index: 10;
+  margin: 0;
+}
+.bannerText {
+  margin-top: 40px;
+  font-size: 5rem;
+}
+.bannerText2 {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-left: 7.5rem;
+}
+
 @media only screen and (max-width: 600px) {
   .bannerContainer {
     background-size: cover;
   }
+  .bannerText2 {
+    margin: 0;
+  }
 }
-.bannerText,
-.programText {
-  color: white;
-  z-index: 10;
-}
-.bannerText {
-  font-size: 5rem;
-}
-
 .programsContainer {
   display: flex;
   justify-content: center;
