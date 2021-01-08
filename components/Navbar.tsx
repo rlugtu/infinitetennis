@@ -7,9 +7,11 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 const Navbar = () => {
     const[isOpen, setIsOpen] = useState(false)
+    const[aboutActive, setAboutActive] = useState(false)
     const toggleBurger = () => {
         setIsOpen(!isOpen)
     }
+    
     return (
         <div className="navBar">
             <div className="navLogo">
@@ -35,18 +37,44 @@ const Navbar = () => {
                     </Link>
                 </Menu>
                 <ul className="navList">
-                    <Link href="/">
-                        <a className="navLink">Home</a>
-                    </Link>
-                    <Link href="/about">
-                        <a className="navLink">About</a>
-                    </Link>
-                    <Link href="/">
-                        <a className="navLink">Programs</a>
-                    </Link>
-                    <Link href="/">
-                        <a className="navLink">Contact</a>
-                    </Link>
+                    <li>
+                        <Link href="/">
+                            <a className="navLink">Home</a>
+                        </Link>
+                    </li>
+                    <div 
+                    onMouseEnter={() => setAboutActive(!aboutActive)}
+                    >
+                        <li className="navLink">About</li>
+                        {aboutActive && (
+                            <div className="dropdown"
+                            onMouseEnter={() => setAboutActive(true)}
+                            onMouseLeave={() => setAboutActive(false)}
+                            >
+                            <Link href="/about"><a className="navLink">About Us</a>
+                            </Link>
+                            <Link href="/team"><a className="navLink">Our Team</a>
+                            </Link>
+                            <Link href="/team"><a className="navLink">Alumni</a>
+                            </Link>
+                        </div>
+                        )}
+                        
+                    </div>
+                   
+                        
+                    
+                    <li>
+                        <Link href="/">
+                            <a className="navLink">Programs</a>
+                        </Link>
+                    </li>
+                   <li>
+                        <Link href="/">
+                            <a className="navLink">Contact</a>
+                        </Link>
+                   </li>
+                    
                 </ul>
             </div>
         </div>
