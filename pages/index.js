@@ -5,6 +5,7 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import MobileDetect from "mobile-detect";
 import {useState} from 'react'
+import Link from 'next/link'
 
 // Components
 import Navbar from '../components/Navbar.tsx'
@@ -59,14 +60,20 @@ const Home = ( {props} ) => {
                 <div className="imageOverlay"></div>
                 <h1 className="programText">Our Programs</h1>
               </div>
-              <div className="singleProgramContainer sp2">
-                <div className="imageOverlay"></div>
-                <h1 className="programText">Our Team</h1>
-              </div>
-              <div className="singleProgramContainer sp3">
-                <div className="imageOverlay"></div>
-                <h1 className="programText">Our Philosophy</h1>
-              </div>
+              <Link href="/team">
+                <div className="singleProgramContainer sp2">
+                  <div className="imageOverlay"></div>
+                  <h1 className="programText">Our Team</h1>
+                </div>
+              </Link>
+              
+              <Link href="/about">
+                <div className="singleProgramContainer sp3">
+                  <div className="imageOverlay"></div>
+                  <h1 className="programText">Our Philosophy</h1>
+                </div>
+              </Link>
+              
             </div>
             <div className="videoFeedContainer">
               <h1 className="videoHeader">Inside Our Program</h1>

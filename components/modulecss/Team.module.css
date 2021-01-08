@@ -1,0 +1,57 @@
+.teamContentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  max-width: 1400px;
+  padding: 20px;
+}
+.pageHeader {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  border-bottom: 1px solid rgb(162, 162, 162);
+}
+.staffHeading {
+  text-align: center;
+  margin: 0;
+  border-bottom: 1px solid rgb(162, 162, 162);
+}
+
+.headCoachContainer {
+  display: flex;
+  margin: 40px 0;
+}
+@media only screen and (max-width: 600px) {
+  .headCoachContainer {
+    flex-wrap: wrap;
+  }
+  .coachPic {
+    height: 200px !important;
+    width: 300px !important;
+  }
+}
+
+.headCoachDescription {
+  padding: 0 10px;
+}
+.headCoachDescription * {
+  margin: 0;
+}
+.currentCoachesContainer {
+  display: flex;
+  margin: 20px 0px;
+}
+.singleCoachContainer {
+  margin: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .currentCoachesContainer {
+    flex-wrap: wrap;
+  }
+}
+
+.singleCoachDescription * {
+  margin: 0;
+}

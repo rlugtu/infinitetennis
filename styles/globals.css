@@ -25,6 +25,9 @@ ul {
   height: 100%;
   position: relative;
 }
+.pageHeader {
+  font-size: 3rem;
+}
 .bodyContainer {
   display: flex;
   flex-direction: column;
@@ -92,6 +95,15 @@ a:hover {
     display: none;
   }
   #bm-menu-wrap {
+    display: none;
+  }
+  .bm-item-list {
+    display: none;
+  }
+  .bm-menu {
+    display: none;
+  }
+  .bm-menu-wrap {
     display: none;
   }
 }
@@ -215,6 +227,7 @@ a:hover {
   min-width: 300px;
   flex-grow: 1;
   position: relative;
+  cursor: pointer;
 }
 
 .sp1,
@@ -283,6 +296,9 @@ a:hover {
   background-color: black;
   position: absolute;
   opacity: 0.3;
+}
+.imageOverlay:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .contactContainer {

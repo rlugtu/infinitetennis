@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar'
 import styles from '../components/modulecss/About.module.css'
 import Footer from '../components/Footer'
 import Image from "next/image"
+import Link from 'next/link'
 
 const About = () => {
     return (
@@ -15,7 +16,7 @@ const About = () => {
                     <div className={styles.about1}>
                         <div className={styles.aboutHeader}>
                             <h1 className={styles.textHeaders}>Our Philosophy</h1>
-                            <div className={styles.     aboutHeaderImage}>
+                            <div className={styles.aboutHeaderImage}>
                                 <Image
                                 className="image" 
                                 src="/programphoto1.jpeg"
@@ -31,11 +32,12 @@ const About = () => {
                             <div className={styles.aboutText}>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, facere beatae! Vero dolorum a mollitia pariatur, similique quidem quae corporis nemo voluptatum, facilis ullam, ducimus est amet. Officia, neque eum?</p>
                                 <div className={styles.viewMore1}>
-                                    <h1 className={styles.viewMoreButton}>View our Team here!</h1>
+                                    <Link href="/team"><h1 className={styles.viewMoreButton}>View our Team here!</h1>
+                                    </Link>
                                 </div>
                             </div>
                         <div className={styles.aboutHeader2}>
-                                <h1 className={styles.textHeaders}>Coaches</h1>
+                                <h1 className={styles.textHeaders}>Our Team</h1>
                                 <div className={styles.     aboutHeaderImage}>
                                     <Image 
                                     className="image"
@@ -58,9 +60,12 @@ const About = () => {
                         </div>
                             <div className={styles.aboutText}>
                                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, facere beatae! Vero dolorum a mollitia pariatur, similique quidem quae corporis nemo voluptatum, facilis ullam, ducimus est amet. Officia, neque eum?</p>
-                                <div className={styles.viewMore2}>
-                                    <h1 className={styles.viewMoreButton}>View Alumni here!</h1>
-                                </div>
+                                
+                                <Link href="/alumni">
+                                    <div className={styles.viewMore2}>
+                                        <h1 className={styles.viewMoreButton}>View Alumni here!</h1>
+                                    </div>
+                                </Link>
                             </div>
                     </div>
                 </div>
