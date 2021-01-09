@@ -43,7 +43,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <div 
-                   onMouseEnter={() => setAboutActive(true)}
+                   onMouseOver={() => setAboutActive(true)}
                    onMouseLeave={() => setAboutActive(false)}
                     >
                         <li className="navLink">About</li>
