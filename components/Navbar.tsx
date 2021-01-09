@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 const Navbar = () => {
     const[isOpen, setIsOpen] = useState(false)
-    const[aboutActive, setAboutActive] = useState(true)
+    const[aboutActive, setAboutActive] = useState(false)
     const toggleBurger = () => {
         setIsOpen(!isOpen)
     }
