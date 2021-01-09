@@ -65,9 +65,12 @@ ul {
 .navLink {
   margin: 0 10px;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: white;
-  height: 100%;
+  width: 100%;
+}
+.navLink:hover {
+  font-weight: bold;
 }
 a:hover {
   color: white;
@@ -111,6 +114,16 @@ a:hover {
 }
 .navList {
   display: flex;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.navList li {
+  height: 100%;
+  width: 100%;
+}
+.navList li:hover {
+  border-bottom: 2px solid white;
 }
 @media only screen and (max-width: 600px) {
   .navBar {
@@ -141,9 +154,6 @@ a:hover {
     position: fixed;
     height: 100vh;
   } */
-  .navLink {
-    font-size: 1.5rem;
-  }
 
   .bm-burger-button {
     display: flex;
@@ -407,16 +417,25 @@ a:hover {
 
 .dropdown {
   position: absolute;
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   background-color: rgb(42, 93, 155);
-  padding: 20px 0;
-  padding-right: 30px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-right: 40px;
+  padding-bottom: 30px;
 }
-.dropDown > a {
-  margin: 5px 0;
+.dropDown > * {
+  margin: 10px 0 !important;
+}
+.dropdownLink {
+  margin: 5px 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  height: 100%;
+}
+.dropdownLink:hover {
+  font-weight: bold;
 }
 .footerContainer {
   background-color: rgb(42, 93, 155, 1);

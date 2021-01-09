@@ -21,7 +21,12 @@
 
 .headCoachContainer {
   display: flex;
-  margin: 40px 0;
+  margin: 40px 10px;
+}
+.headCoachPicContainer {
+  width: 500px;
+  height: 300px;
+  position: relative;
 }
 @media only screen and (max-width: 600px) {
   .headCoachContainer {
@@ -39,6 +44,7 @@
 .headCoachDescription * {
   margin: 0;
 }
+
 .currentCoachesContainer {
   display: flex;
   margin: 20px 0px;
@@ -50,6 +56,26 @@
   .currentCoachesContainer {
     flex-wrap: wrap;
   }
+  .singleCoachContainer {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .coachPicContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .singleCoachDescription {
+    padding: 0 20px;
+  }
+}
+.coachPicContainer {
+  max-width: 100%;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .singleCoachDescription * {

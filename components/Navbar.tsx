@@ -51,13 +51,17 @@ const Navbar = () => {
                             onMouseEnter={() => setAboutActive(true)}
                             onMouseLeave={() => setAboutActive(false)}
                             >
-                            <Link href="/about"><a className="navLink">About Us</a>
-                            </Link>
-                            <Link href="/team"><a className="navLink">Our Team</a>
-                            </Link>
-                            <Link href="/team"><a className="navLink">Alumni</a>
-                            </Link>
-                        </div>
+                                <Link href="/about">
+                                    <a className="dropdownLink">About Us</a>
+                                </Link>
+                                <Link href="/team">
+                                    <a className="dropdownLink">Our Team</a>
+                                </Link>
+                                <Link href="/alumni">
+                                    <a className="dropdownLink">Alumni
+                                    </a>
+                                </Link>
+                            </div>
                         )}                      
                     </div>
                     <li>

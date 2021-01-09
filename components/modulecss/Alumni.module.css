@@ -1,0 +1,40 @@
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  max-width: 1400px;
+  padding: 20px;
+}
+.pageHeader {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  border-bottom: 1px solid rgb(162, 162, 162);
+}
+.playerContainer {
+  display: flex;
+  margin: 10px 0;
+}
+.playerDescription {
+  padding: 0 10px;
+}
+.playerName {
+  margin: 0;
+}
+.playerPic {
+  width: 400px;
+  height: 200px;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  .playerContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .playerDescription {
+    padding: 0 20px;
+  }
+}
