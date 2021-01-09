@@ -68,6 +68,7 @@ ul {
   font-size: 1.2rem;
   color: white;
   width: 100%;
+  /* z-index: 100 !important; */
 }
 .navLink:hover {
   font-weight: bold;
@@ -423,6 +424,17 @@ a:hover {
   padding-top: 20px;
   padding-right: 40px;
   padding-bottom: 30px;
+  animation: fadeIn 0.3s ease-in;
+  /* top: 0; */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .dropDown > * {
   margin: 10px 0 !important;

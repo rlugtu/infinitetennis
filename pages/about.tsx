@@ -25,7 +25,9 @@ const About = () => {
                             </div>
                         </div>
                         <div className={styles.aboutText}>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, facere beatae! Vero dolorum a mollitia pariatur, similique quidem quae corporis nemo voluptatum, facilis ullam, ducimus est amet. Officia, neque eum?</p>
+                            <p>We have developed a very unique teaching process which is called the Okuda Method. This method can develop players from beginners to true high-performance players, step-by-step.
+                            We believe that true high-performance is about continuing to develop fundamentals at every level, focusing on technical details, and pushing players beyond what they believe to be their physical and mental limit. We understand and respect the differences of each player and develop their specific strengths, technical needs, and their individual personality and confidence.
+                            </p>
                         </div>
                     </div>
                     <div className={styles.about2}>
