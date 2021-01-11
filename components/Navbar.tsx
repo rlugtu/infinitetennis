@@ -95,7 +95,7 @@ const Navbar = () => {
                         )}                      
                     </div>
                    <li>
-                        <Link href="/">
+                        <Link href="/contact">
                             <a className="navLink">Contact</a>
                         </Link>
                    </li> 

@@ -11,6 +11,7 @@
   font-size: 3rem;
   margin-bottom: 0;
   border-bottom: 1px solid rgb(162, 162, 162);
+  text-align: center;
 }
 @media only screen and (min-width: 850px) {
   /* .aboutContainer {
@@ -111,13 +112,22 @@
   font-size: 1.5rem;
   width: 60%;
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
   .teamHeaderText {
     padding-right: 10%;
   }
   .philosophyTextHeader,
   .alumniTextHeader {
     padding-left: 10%;
+  }
+}
+@media only screen and (min-width: 1800px) {
+  .teamHeaderText {
+    padding-right: 20%;
+  }
+  .philosophyTextHeader,
+  .alumniTextHeader {
+    padding-left: 20%;
   }
 }
 .viewMore1 {

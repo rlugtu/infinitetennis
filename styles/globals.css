@@ -456,3 +456,6 @@ a:hover {
   left: 0;
   text-align: center;
 }
+.footerContainer p {
+  margin: 0;
+}

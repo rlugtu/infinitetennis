@@ -24,25 +24,33 @@
   margin: 40px 10px;
 }
 .headCoachPicContainer {
-  width: 500px;
-  height: 300px;
+  width: 40%;
+  min-width: 300px;
+  min-height: 400px;
   position: relative;
 }
 @media only screen and (max-width: 600px) {
   .headCoachContainer {
     flex-wrap: wrap;
   }
-  .coachPic {
-    height: 200px !important;
-    width: 300px !important;
+  .headCoachPicContainer {
+    width: 100%;
+  }
+  .headCoachDescription {
+    padding: 0 10px;
+    width: 100% !important;
   }
 }
 
 .headCoachDescription {
   padding: 0 10px;
+  width: 60%;
 }
 .headCoachDescription * {
   margin: 0;
+}
+.headCoachDescription p {
+  font-size: 1.2rem;
 }
 
 .currentCoachesContainer {
