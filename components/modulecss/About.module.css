@@ -5,7 +5,7 @@
   margin-top: 60px;
   width: 100%;
   height: 100%;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 .pageHeader {
   font-size: 3rem;
@@ -25,10 +25,11 @@
   padding: 0 20px;
 }
 .aboutContainer {
-  margin: 20px;
+  /* margin: 20px 0; */
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 @media only screen and (max-width: 600px) {
   .about1,
@@ -37,56 +38,87 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .aboutContent {
+    flex-wrap: wrap;
+  }
+
+  .aboutHeader {
+    width: 100%;
+  }
+  .aboutHeaderImage {
+    width: 100%;
+    height: auto;
+  }
 }
-.about1,
-.about2,
-.about3 {
-  display: flex;
-  width: 100%;
+
+.aboutContent {
   max-width: 1200px;
-  /* margin: 10px 0; */
-  padding: 40px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
-.about1 {
+.philosophyContainer,
+.teamContainer,
+.alumniContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: lightblue;
+  width: 100%;
+  padding: 30px 20px;
 }
-.about2 {
+.teamContainer {
   background-color: rgb(184, 184, 184);
+  min-height: 400px;
 }
-.about3 {
-  background-color: rgb(216, 176, 127);
+.alumniContainer {
+  background-color: rgb(220, 195, 133);
+  min-height: 400px;
 }
 .aboutHeader {
   display: flex;
   flex-direction: column;
-  width: 300px;
-}
-.aboutHeader2 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  width: 40%;
 }
 .aboutHeaderImage {
-  width: 300px;
-  height: 200px;
+  width: auto;
+  height: 100%;
   position: relative;
   margin-top: 10px;
 }
-
-.textHeaders {
+.philosophyTextHeader,
+.teamHeaderText,
+.alumniTextHeader {
   margin: 0;
+  font-size: 3rem;
 }
-.textHeaders2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+.philosophyTextHeader,
+.alumniTextHeader {
+  padding-left: 20px;
+}
+.teamHeaderText {
+  text-align: right;
+  padding-right: 20px;
 }
 .aboutText {
   margin: 0 20px;
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  font-size: 1.5rem;
+  width: 60%;
+}
+@media only screen and (min-width: 1300px) {
+  .teamHeaderText {
+    padding-right: 10%;
+  }
+  .philosophyTextHeader,
+  .alumniTextHeader {
+    padding-left: 10%;
+  }
 }
 .viewMore1 {
   display: flex;
@@ -110,8 +142,7 @@
   font-weight: 600;
 }
 @media only screen and (max-width: 600px) {
-  .aboutHeader,
-  .aboutHeader2 {
+  .aboutHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,6 +156,8 @@
   }
   .aboutText {
     order: 2;
+    font-size: 1.2rem;
+    width: 100%;
   }
   .viewMore1,
   .viewMore2 {
