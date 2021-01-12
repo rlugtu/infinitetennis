@@ -3,6 +3,36 @@
   display: flex;
   justify-content: center;
 }
+.bannerContainer {
+  height: 400px;
+  width: 100%;
+  margin-top: 60px;
+  object-position: 40% 50%;
+  position: relative;
+  background-color: black;
+}
+.bannerPic {
+  opacity: 0.5;
+}
+.bannerText {
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  align-items: center;
+  margin: 0;
+}
+@media only screen and (max-width: 600px) {
+  .bannerText {
+    font-size: 3.5rem;
+  }
+  .bannerContainer {
+    height: 300px;
+  }
+}
 .contactContainer {
   display: flex;
   width: 100%;

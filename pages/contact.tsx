@@ -3,6 +3,8 @@ import Footer from '../components/Footer'
 import Banner from '../components/Banner'
 import styles from '../components/modulecss/Contact.module.css'
 import emailjs from 'emailjs-com'
+
+import Image from 'next/image'
 const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
@@ -18,7 +20,17 @@ const Contact = () => {
     return(
         <div>
             <Navbar />
-            <Banner />
+            <div className={styles.bannerContainer}>
+                <Image src="/contactPage/contactBanner.jpg"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="50% 48%"
+                className={styles.bannerPic}
+                
+                />
+                 <h1 className={styles.bannerText}>Contact Us</h1>
+            </div>
+            {/* <Banner /> */}
             <div className={styles.contactContainer}>
                 <div className={styles.contactContent}>
                     <div className={styles.contactFormContainer}>
@@ -37,9 +49,10 @@ const Contact = () => {
                         </form>
                     </div>
                     <div className={styles.connectContainer}>
-                        <h1>Connect with us:</h1>
+                        <h1>Connect with us</h1>
                         <p>For questions and inquiries</p>
-                        <p>Email us at paumokuda@gmail.com </p>
+                        <p>Email us at:</p>
+                        <p>paumokuda@gmail.com </p>
                         <h2 className={styles.location}>Current Camp Locations:</h2>
                         <p>Haworth Country Club</p>
                         <p>Waldwick Covered Courts</p>
