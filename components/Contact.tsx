@@ -1,48 +1,42 @@
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import { withStyles, makeStyles } from "@material-ui/core/styles";
+import styles from './modulecss/Contact.module.css'
+import emailjs from 'emailjs-com'
 
 const useStyles = makeStyles((theme) => ({
     inputFirst: {
         paddingRight: 20
       }, 
   }));
+  
 const ContactForm = () => {
     const classes = useStyles()
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_6jlucla', 'template_m3rqw57', e.target, "user_c7hTDRc6DgEEkj2BOiw3u")
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+          e.target.reset()
+    }
     return (
-        <div className="contactFormContainer">
-            <h1>Contact Us!</h1>
-            <form className="contactForm">
-                <div className="formLine1">
-                    <div>
-                        <p className="contactTitle">First Name</p>
-                        <TextField className="inputFirstName" fullWidth={true} variant="filled" type="text" name="firstName" />
-                    </div>
-                    <div>
-                        <p className="contactTitle">Last Name</p>
-                        <TextField className="inputLastName" fullWidth={true} variant="filled" type="text" name="lastName" />
-                    </div>
-                </div>
-                    <div>
-                        <p className="contactTitle">Phone</p>
-                        <TextField fullWidth={true} variant="filled" type="number" name="phone" />
-                    </div>
-                    <div>
-                        <p className="contactTitle">Email</p>
-                        <TextField fullWidth={true} variant="filled" type="text" name="email" />
-                        <p className="contactTitle">Message</p>
-                        <TextField
-                        fullWidth={true}
-                        id="textBox"
-                        multiline
-                        rows={4}
-                        defaultValue="Default Value"
-                        />
-                    </div>
-                <div className="contactSubmitContainer">
-                    <Button className="contactSubmit"variant="outlined">Submit</Button>
-                </div>
-                
+        <div className={styles.contactFormContainer}>
+            <h1>Get In Touch</h1>
+            <p>Please fill out this form and we will be in touch</p>
+            <form className={styles.contactForm} onSubmit={sendEmail}>
+                <label>Name</label>
+                <input className={styles.input} type="text" name="name" />
+                <label>Email</label>
+                <input className={styles.input}type="email" name="email" />
+                <label>Phone Number</label>
+                <input className={styles.input}type="number" name="phone" />
+                <label>Message</label>
+                <textarea className={styles.textArea} name="message" rows={5} cols={5}/>
+                <input className={styles.submitButton}type="submit" value="Send" />
             </form>
         </div>
     )

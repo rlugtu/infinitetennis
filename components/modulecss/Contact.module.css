@@ -40,11 +40,14 @@
   background-color: rgb(42, 93, 155);
 }
 .contactFormContainer {
-  margin: 0 50px;
+  /* margin: 0 50px; */
   color: white;
+  background-color: rgb(42, 93, 155);
+  padding: 30px 50px;
 }
 .contactFormContainer h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  margin: 0;
 }
 .contactFormContainer p {
   font-size: 1.5rem;
@@ -66,7 +69,7 @@
   margin: 0 50px;
 }
 .connectContainer h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .connectContainer p {
   font-size: 1.5rem;

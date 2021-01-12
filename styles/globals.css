@@ -340,15 +340,6 @@ a:hover {
   background-color: rgb(238, 238, 238);
 }
 
-.contactFormContainer {
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(172, 203, 225);
-  padding: 20px 60px;
-  width: 40%;
-  min-height: 340px;
-}
-
 @media only screen and (min-width: 768px) {
   .formLine1 {
     display: flex;
@@ -361,71 +352,16 @@ a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  .contactFormContainer {
-    width: 100%;
-    align-items: center;
-    padding: 20px;
-  }
   .imageContainer {
     display: none;
   }
 }
-.contactForm {
-  width: 100%;
-}
-.contactFormContainer > h1 {
-  margin: 0;
-}
-.contactFormContainer p {
-  margin: 5px 0;
-}
 
-.contactSubmitContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-}
-.contactFullWidthText {
-  width: 100%;
-}
 .imageContainer {
   position: relative;
-  width: 370px;
-  height: auto;
-  overflow: hidden;
+  width: 450px;
+  height: 450px;
 }
-.image {
-  object-fit: cover;
-}
-
-.MuiInputBase-input {
-  background: white !important;
-  /* height: 20px !important; */
-  width: 100% !important;
-}
-.MuiFilledInput-input,
-.contactSubmit {
-  padding: 5px !important;
-}
-.contactSubmit,
-.MuiButton-label {
-  background-color: white !important;
-  width: 30% !important;
-}
-.textBox {
-  padding: 0 !important;
-  width: 100% !important;
-}
-@media only screen and (min-width: 768px) {
-  .inputFirstName {
-    padding-right: 10px !important;
-  }
-  .inputLastName {
-    padding-left: 10px !important;
-  }
-}
-
 .dropdown {
   position: absolute;
   display: flex;

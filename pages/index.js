@@ -117,9 +117,9 @@ const Home = ( {props} ) => {
               <div className="imageContainer">
                 <Image 
                 src='/contactpic.jpg'
-                className="image"
-                height={400}
-                width={400}/>
+                layout="fill"
+                objectFit="cover"
+                />
               </div>
             </div>
         </div>
