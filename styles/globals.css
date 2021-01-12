@@ -206,6 +206,11 @@ a:hover {
   margin-top: 60px;
   display: flex;
 }
+@media only screen and (max-width: 600px) {
+  .bannerContainer {
+    height: 300px;
+  }
+}
 
 .bannerText,
 .bannerText2,
@@ -226,10 +231,15 @@ a:hover {
 
 @media only screen and (max-width: 600px) {
   .bannerContainer {
-    background-size: cover;
+    min-height: 300px;
   }
   .bannerText2 {
     margin: 0;
+    font-size: 2rem;
+  }
+  .bannerText {
+    font-size: 4rem;
+    margin-top: 15px;
   }
 }
 .programsContainer {
