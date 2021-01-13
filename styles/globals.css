@@ -400,8 +400,35 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  text-align: center;
+  padding: 40px 20px;
+  display: flex;
 }
 .footerContainer p {
   margin: 0;
+  color: white;
+  font-size: 1.2rem;
+}
+.footerLogo {
+  height: 100%;
+  margin: 0 20px;
+  color: white;
+  align-self: center;
+}
+
+.footerColumn {
+  width: 33%;
+  margin: 0 20px;
+}
+.footerColumn h1,
+.footerColumn h2 {
+  margin: 0;
+  color: white;
+  font-size: 1.8rem;
+}
+
+.footerColumn h2 {
+  font-size: 1.3rem;
+  margin: 5px 0;
+}
+@media only screen and (max-width: 600px) {
 }

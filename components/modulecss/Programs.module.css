@@ -51,6 +51,9 @@
   font-size: 2.5rem;
   margin: 0;
 }
+.programsContainer p {
+  padding: 0 10px;
+}
 .sessionContainer {
   width: 100%;
   max-width: 900px;

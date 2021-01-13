@@ -56,10 +56,12 @@ const Home = ( {props} ) => {
       <Banner />
       <div className="bodyContent">
         <div className="programsContainer">
-              <div className="singleProgramContainer sp1">
-                <div className="imageOverlay"></div>
-                <h1 className="programText">Our Programs</h1>
-              </div>
+              <Link href="/programs">
+                <div className="singleProgramContainer sp1">
+                  <div className="imageOverlay"></div>
+                  <h1 className="programText">Our Programs</h1>
+                </div>
+              </Link>
               <Link href="/team">
                 <div className="singleProgramContainer sp2">
                   <div className="imageOverlay"></div>
