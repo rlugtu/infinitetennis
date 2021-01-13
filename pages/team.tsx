@@ -32,9 +32,8 @@ const Team = () => {
                     <div className={styles.currentCoachesContainer}>
                         {CoachInfo.current.map((coach,i) => (
                             <SingleCoach
-                            id={i} 
-                            name={coach.name}
-                            description={coach.description}
+                            id={i}
+                            {...coach} 
                             />
                         ))}
                     </div>

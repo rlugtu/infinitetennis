@@ -7,11 +7,12 @@ const SingleCoach = (props) => {
         <div className={styles.singleCoachContainer}>
             <div className={styles.coachPicContainer}>
                 <Image 
-                    src='/coaches/coachPic.jpg'
+                    src={'/coaches/' + props.pic}
                     className={styles.coachPic}
                     // height={200}
                     // width={300} 
-                    layout="fill"                               objectFit="cover"
+                    layout="fill"                          
+                    objectFit="cover"
                 />     
             </div>                    
             <div className={styles.singleCoachDescription}>

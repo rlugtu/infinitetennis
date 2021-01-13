@@ -70,29 +70,9 @@ const Navbar = () => {
                    onMouseOver={() => setProgramsActive(true)}
                    onMouseLeave={() => setProgramsActive(false)}
                     >
-                        <li className="navLink">Programs</li>
-                        {programsActive && (
-                            <div className="dropdown"
-                            onMouseEnter={() => setProgramsActive(true)}
-                            onMouseLeave={() => setProgramsActive(false)}
-                            >
-                                <Link href="/alumni">
-                                    <a className="dropdownLink">All Programs
-                                    </a>
-                                </Link>
-                                <Link href="/about">
-                                    <a className="dropdownLink">Summer Camp</a>
-                                </Link>
-                                <Link href="/team">
-                                    <a className="dropdownLink">Winter Camp</a>
-                                </Link>
-                                <Link href="/alumni">
-                                    <a className="dropdownLink">Seasonal Camps
-                                    </a>
-                                </Link>
-                                
-                            </div>
-                        )}                      
+                        <li className="navLink">
+                            <Link href="/programs"><a className="navLink">Programs</a>
+                                </Link></li>                 
                     </div>
                    <li>
                         <Link href="/contact">

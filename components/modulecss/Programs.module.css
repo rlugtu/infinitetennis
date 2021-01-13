@@ -1,0 +1,77 @@
+.pageContainer {
+  margin-top: 60px;
+}
+.bannerContainer {
+  height: 400px;
+  width: 100%;
+  margin-top: 60px;
+  object-position: 40% 50%;
+  position: relative;
+  background-color: black;
+}
+.bannerPic {
+  opacity: 0.5;
+}
+.bannerText {
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  align-items: center;
+  margin: 0;
+}
+.bannerDescription {
+  position: absolute;
+  font-size: 1rem;
+  bottom: 0;
+  color: white;
+  padding: 0 40px;
+}
+@media only screen and (max-width: 600px) {
+  .bannerText {
+    font-size: 3.5rem;
+  }
+  .bannerContainer {
+    height: 300px;
+  }
+}
+
+.programsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: lightgrey;
+}
+.programsContainer h1 {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+.sessionContainer {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgb(238, 238, 238);
+  border-radius: 5px;
+  margin: 5px 0;
+}
+.sessionContainer h1 {
+  padding: 10px;
+  background-color: rgb(42, 93, 155);
+  color: white;
+  font-size: 1.5rem;
+  margin: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.sessionContainer p {
+  padding: 0 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .sessionContainer {
+    padding: 0;
+  }
+}

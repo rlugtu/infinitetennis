@@ -2,23 +2,28 @@
         "current": [
             {
                 "name":"Yukiko Okuda",
-                "description": "Yukiko, Tatsumi’s wife, has been by his side for the decades that they have been building up the business together. She is an accomplished doubles player, as a World Team Tennis national finalist for many years in a row, she holds vast knowledge of the tennis game. She has specialized in teaching the younger kids and has helped many kids build strong fundamentals. The kids know her for being very patient but tough, especially in the dynamic stretches."
+                "description": "Yukiko, Tatsumi’s wife, has been by his side for the decades that they have been building up the business together. She is an accomplished doubles player, as a World Team Tennis national finalist for many years in a row, she holds vast knowledge of the tennis game. She has specialized in teaching the younger kids and has helped many kids build strong fundamentals. The kids know her for being very patient but tough, especially in the dynamic stretches.",
+                "pic": "coachPic.jpg"
             },
             {
                 "name":"Akiko Okuda",
-                "description": "Yukiko, Tatsumi’s wife, has been by his side for the decades that they have been building up the business together. She is an accomplished doubles player, as a World Team Tennis national finalist for many years in a row, she holds vast knowledge of the tennis game. She has specialized in teaching the younger kids and has helped many kids build strong fundamentals. The kids know her for being very patient but tough, especially in the dynamic stretches."
+                "description": "Yukiko, Tatsumi’s wife, has been by his side for the decades that they have been building up the business together. She is an accomplished doubles player, as a World Team Tennis national finalist for many years in a row, she holds vast knowledge of the tennis game. She has specialized in teaching the younger kids and has helped many kids build strong fundamentals. The kids know her for being very patient but tough, especially in the dynamic stretches.",
+                "pic": "akikookuda.jpg"
             },
             {
                 "name":"Randy Esmera",
-                "description": " Randy has been coaching with Tatsumi for 5+ years. Having trained in Tatsumi’s camp as a player himself, he knows Tatsumi’s teaching methods very well. He was an accomplished high school tennis player on the Paramus Catholic boy’s team, playing the #1 spot."
+                "description": " Randy has been coaching with Tatsumi for 5+ years. Having trained in Tatsumi’s camp as a player himself, he knows Tatsumi’s teaching methods very well. He was an accomplished high school tennis player on the Paramus Catholic boy’s team, playing the #1 spot.",
+                "pic": "coachPic.jpg"
             },
             {
                 "name":"Ryan Lugtu",
-                "description": "Ryan has been coaching with Tatsumi for 5+ years. He also trained at Tatsumi’s program since he was 10 years old(?). Ryan had prominent wins against top 10 Eastern players in the 16 and under, and 18 and under divisions, and went on to play college tennis at Hartford."
+                "description": "Ryan has been coaching with Tatsumi for 5+ years. He also trained at Tatsumi’s program since he was 10 years old. Ryan had prominent wins against top 10 Eastern players in the 16 and under, and 18 and under divisions, and went on to play college tennis at Hartford.",
+                "pic": "coachPic.jpg"
             },
             {
                 "name":"Samantha Lugtu",
-                "description": "Samantha has been teaching summers at Tatsumi’s camp for 3 years now. She also trained in Tatsumi’s program since she was 7(?) years old. Samantha was ranked #2 in the Eastern section in the 12 and under division. She is currently playing tennis at Wagner College and supports the coaching effort during her school breaks."
+                "description": "Samantha has been teaching summers at Tatsumi’s camp for 3 years now. She also trained in Tatsumi’s program since she was 7 years old. Samantha was ranked #2 in the Eastern section in the 12 and under division. She is currently playing tennis at Wagner College and supports the coaching effort during her school breaks.",
+                "pic":"samlugtu.jpg"
             }
         ]
 }
