@@ -19,12 +19,13 @@
 }
 .playerDescription {
   padding: 0 10px;
+  width: 70%;
 }
 .playerName {
   margin: 0;
 }
 .playerPic {
-  width: 400px;
+  width: 30%;
   height: 200px;
   position: relative;
 }
@@ -34,7 +35,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .playerPic {
+    width: 100%;
+  }
   .playerDescription {
     padding: 0 20px;
+    width: 100%;
   }
 }

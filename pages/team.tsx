@@ -2,8 +2,8 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Image from "next/image"
 import styles from '../components/modulecss/Team.module.css'
-
-
+import SingleCoach from '../components/SingleCoach'
+import CoachInfo from '../components/assets/coachBios.json'
 const Team = () => {
     return (
         <div>
@@ -30,66 +30,13 @@ const Team = () => {
                 <div className={styles.staffContainer}>
                     <h1 className={styles.staffHeading}>Current Staff</h1>
                     <div className={styles.currentCoachesContainer}>
-                        <div className={styles.singleCoachContainer}>
-                            <div className={styles.coachPicContainer}>
-                                <Image 
-                                    src='/coaches/coachPic.jpg'
-                                    className={styles.coachPic}
-                                    // height={200}
-                                    // width={300} 
-                                    layout="fill"                               objectFit="cover"
-                                />     
-                            </div>                    
-                            <div className={styles.singleCoachDescription}>
-                                <h1>Name</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam quae dolores hic velit minima ad dicta quas. Aperiam vero excepturi facere atque totam consectetur officia qui aut unde laudantium.</p>
-                            </div>
-                        </div>
-                        <div className={styles.singleCoachContainer}>
-                            <div className={styles.coachPicContainer}>
-                                <Image 
-                                    src='/coaches/coachPic.jpg'
-                                    className={styles.coachPic}
-                                     // height={200}
-                                    // width={300} 
-                                    layout="fill"                               objectFit="cover"
-                                />     
-                            </div>
-                            <div className={styles.singleCoachDescription}>
-                                <h1>Name</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam quae dolores hic velit minima ad dicta quas. Aperiam vero excepturi facere atque totam consectetur officia qui aut unde laudantium.</p>
-                            </div>
-                        </div>
-                        <div className={styles.singleCoachContainer}>
-                            <div className={styles.coachPicContainer}>
-                                <Image 
-                                    src='/coaches/coachPic.jpg'
-                                    className={styles.coachPic}
-                                     // height={200}
-                                    // width={300} 
-                                    layout="fill"                               objectFit="cover"
-                                />     
-                            </div>
-                            <div className={styles.singleCoachDescription}>
-                                <h1>Name</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam quae dolores hic velit minima ad dicta quas. Aperiam vero excepturi facere atque totam consectetur officia qui aut unde laudantium.</p>
-                            </div>
-                        </div>
-                        <div className={styles.singleCoachContainer}>
-                            <div className={styles.coachPicContainer}>
-                                <Image 
-                                    src='/coaches/coachPic.jpg'
-                                    className={styles.coachPic}
-                                     // height={200}
-                                    // width={300} 
-                                    layout="fill"                                objectFit="cover"
-                                />     
-                            </div>
-                            <div className={styles.singleCoachDescription}>
-                                <h1>Name</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam quae dolores hic velit minima ad dicta quas. Aperiam vero excepturi facere atque totam consectetur officia qui aut unde laudantium.</p>
-                            </div>
-                        </div>
+                        {CoachInfo.current.map((coach,i) => (
+                            <SingleCoach
+                            id={i} 
+                            name={coach.name}
+                            description={coach.description}
+                            />
+                        ))}
                     </div>
                     <h1 className={styles.staffHeading}>Past Staff</h1>
                     <div className={styles.currentCoachesContainer}>
