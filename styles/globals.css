@@ -351,7 +351,7 @@ a:hover {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .imageContainer {
     display: none;
   }
@@ -361,6 +361,18 @@ a:hover {
   position: relative;
   width: 450px;
   height: 450px;
+}
+@media only screen and (max-width: 1075px) {
+  .imageContainer {
+    position: relative;
+    width: 300px;
+    height: 500px;
+  }
+}
+@media only screen and (max-width: 924px) {
+  .imageContainer {
+    display: none;
+  }
 }
 .dropdown {
   position: absolute;
@@ -402,6 +414,7 @@ a:hover {
   left: 0;
   padding: 40px 20px;
   display: flex;
+  justify-content: space-evenly;
 }
 .footerContainer p {
   margin: 0;
@@ -431,4 +444,7 @@ a:hover {
   margin: 5px 0;
 }
 @media only screen and (max-width: 600px) {
+  .footerContainer {
+    display: none;
+  }
 }
