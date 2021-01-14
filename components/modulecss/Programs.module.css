@@ -2,7 +2,7 @@
   margin-top: 60px;
 }
 .bannerContainer {
-  height: 400px;
+  height: 350px;
   width: 100%;
   margin-top: 60px;
   object-position: 40% 50%;
@@ -117,12 +117,24 @@
   height: 150px;
   width: 100%;
 }
+.trainingDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.closeDescription {
+  height: 40px;
+  width: 40px;
+  position: relative;
+  cursor: pointer;
+}
 @media only screen and (max-width: 600px) {
   .trainingContainer {
     flex-wrap: wrap;
   }
   .singleTrainingContainer {
     width: 100%;
+    margin: 0;
   }
 }
 .trainingDescriptionContainer {

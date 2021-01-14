@@ -9,12 +9,24 @@ const About = () => {
         <div className="pageContainer">
             <Navbar />
             <div className={styles.aboutPageContainer}>
-                <div className={styles.aboutBanner}>
+                {/* <div className={styles.aboutBanner}>
                     <h1 className={styles.pageHeader}>About Us</h1>
-                </div>
+                </div> */}
+                <div className={styles.bannerContainer}>
+                <Image src="/contactPage/contactBanner.jpg"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="50% 48%"
+                className={styles.bannerPic}
+                
+                />
+                <h1 className={styles.bannerText}>About Us</h1>
+                {/* <p className={styles.bannerDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, rerum esse dolore amet facere minima repudiandae voluptatibus hic magnam tempora dolores fuga odio doloribus modi assumenda libero. Perferendis, provident non!</p> */}
+            </div>
+            
                 <div className={styles.aboutContainer}>
                     <div className={styles.philosophyContainer}>
-                        <h1 className={styles.philosophyTextHeader}>Our Philosophy</ h1>
+                        {/* <h1 className={styles.philosophyTextHeader}>Our Philosophy</ h1> */}
                         <div className={styles.aboutContent}>
                             <div className={styles.aboutHeader}>
                                 <div className={styles.aboutHeaderImage}>
@@ -27,6 +39,7 @@ const About = () => {
                                 </div>
                             </div>
                             <div className={styles.aboutText}>
+                                <h1>Our Philosophy</h1>
                                 <p>"We have developed a very unique teaching process which is called the Okuda Method. This method can develop players from beginners to true high-performance players, step-by-step.
                                 We believe that true high-performance is about continuing to develop fundamentals at every level, focusing on technical details, and pushing players beyond what they believe to be their physical and mental limit. We understand and respect the differences of each player and develop their specific strengths, technical needs, and their individual personality and confidence."
                                 </p>
@@ -35,10 +48,11 @@ const About = () => {
                         
                     </div>
                     <div className={styles.teamContainer}>
-                        <h1 className={styles.teamHeaderText}>Our Team</ h1>
+                        {/* <h1 className={styles.teamHeaderText}>Our Team</ h1> */}
                         <div className={styles.aboutContent}>
                             
                             <div className={styles.aboutText}>
+                                <h1>Our Team</h1>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis voluptatum, adipisci veritatis qui accusamus repellendus velit rem doloribus, nihil obcaecati necessitatibus assumenda amet magni soluta facilis quae fugit dolores.
                                 </p>
                                 <div className={styles.viewMore1}>
@@ -60,7 +74,6 @@ const About = () => {
                         
                     </div>
                     <div className={styles.alumniContainer}>
-                        <h1 className={styles.alumniTextHeader}>Alumni</ h1>
                         <div className={styles.aboutContent}>
                             <div className={styles.aboutHeader}>
                                 <div className={styles.aboutHeaderImage}>
@@ -70,9 +83,11 @@ const About = () => {
                                     layout="fill"
                                     objectFit="cover"
                                     />
+                                    <h1>Hey</h1>
                                 </div>
                             </div>
                             <div className={styles.aboutText}>
+                                <h1>Alumni</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere necessitatibus voluptates reiciendis quo sapiente quisquam perspiciatis totam officia iusto nihil minima dicta natus quis, vitae maiores? Deleniti, molestiae quam.
                                 </p>
                                 <Link href="/alumni">

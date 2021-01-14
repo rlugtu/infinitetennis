@@ -11,7 +11,7 @@ const Programs = () => {
     const[description, setDescription] = useState(null)
     const activateDescriptionFunc = (input) => {
         setDescription(input)
-        setActivateDescription(!activateDescription)
+        setActivateDescription(true)
     }
     return(
         <div>
@@ -79,6 +79,7 @@ const Programs = () => {
                 {activateDescription && (
                     <DevelopmentText
                     description = {description}
+                    setActivateDescription={setActivateDescription}
                     />
                 )}
             </div>
