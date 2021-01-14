@@ -1,0 +1,14 @@
+{
+    "fitness": {
+        "description": "fitness summary"
+    },
+    "drills": {
+        "description": "drills summary"
+    },
+    "pointplay": {
+        "description": "pointplay summary"
+    },
+    "matchplay": {
+        "description": "matchplay summary"
+    }
+}

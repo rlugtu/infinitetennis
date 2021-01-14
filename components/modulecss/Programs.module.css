@@ -45,7 +45,8 @@
   align-items: center;
   width: 100%;
   background-color: lightgrey;
-  padding: 40px 0;
+  padding: 20px 0;
+  padding-bottom: 40px;
 }
 .programsContainer h1 {
   font-size: 2.5rem;
@@ -77,5 +78,66 @@
 @media only screen and (max-width: 600px) {
   .sessionContainer {
     padding: 0;
+  }
+}
+
+.developmentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgb(42, 93, 155);
+}
+.developmentContainer h1 {
+  margin: 0;
+  color: white;
+}
+.trainingContainer {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.singleTrainingContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 10px;
+  width: 30%;
+  cursor: pointer;
+}
+.singleTrainingContainer h1 {
+  margin-top: 5px;
+}
+.trainingPicContainer {
+  position: relative;
+  height: 150px;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .trainingContainer {
+    flex-wrap: wrap;
+  }
+  .singleTrainingContainer {
+    width: 100%;
+  }
+}
+.trainingDescriptionContainer {
+  display: flex;
+  justify-content: center;
+  max-width: 800px;
+  animation: createBox 0.5s;
+  color: white;
+}
+
+@keyframes createBox {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
   }
 }
