@@ -13,26 +13,9 @@ import Banner from '../components/Banner.tsx'
 import Footer from '../components/Footer.tsx'
 import Contact from '../components/Contact.tsx'
 
-const Home = ( {props} ) => {
-  Home.getInitialProps = ({ req }) => {
-    let userAgent;
-    let deviceType;
-    if (req) {
-      userAgent = req.headers["user-agent"];
-    } else {
-      userAgent = navigator.userAgent;
-    }
-    const md = new MobileDetect(userAgent);
-    if (md.tablet()) {
-      deviceType = "tablet";
-    } else if (md.mobile()) {
-      deviceType = "mobile";
-    } else {
-      deviceType = "desktop";
-    }
-    return { deviceType };
-  }
-
+const Index = ( {props} ) => {
+  const[deviceType,setDeviceType] = useState(null)
+  
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -91,6 +74,7 @@ const Home = ( {props} ) => {
                   deviceType="desktop"
                   containerClass="slider-carousel-container"
                   itemClass="carousel-item"
+                  deviceType={deviceType}
                   >
                     {media.map((el,i) => (
                       <ImageSliderSingle />
@@ -111,5 +95,24 @@ const Home = ( {props} ) => {
     </div>
   )
 }
+Index.getInitialProps = async ({ req }) => {
+  let userAgent;
+  let deviceType;
+  if (req) {
+    userAgent = req.headers["user-agent"];
+  } else {
+    userAgent = navigator.userAgent;
+  }
+  const md = new MobileDetect(userAgent);
+  if (md.tablet()) {
+    deviceType = "tablet";
+  } else if (md.mobile()) {
+    deviceType = "mobile";
+  } else {
+    deviceType = "desktop";
+  }
+  return { deviceType: deviceType };
+}
 
-export default Home
+
+export default Index
