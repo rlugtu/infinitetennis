@@ -46,6 +46,7 @@ const Banner = () => {
                 deviceType="desktop"
                 autoPlay ={true}
                 autoPlaySpeed={5000}
+                arrows={false}
                 >
                     <div className={styles.bannerPicContainer}>
                         <Image src='/homeBanner/4.jpg'
