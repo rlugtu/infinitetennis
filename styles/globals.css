@@ -318,6 +318,7 @@ a:hover {
   margin: 0;
   font-size: 1.5rem;
   color: rgb(240, 240, 240);
+  font-weight: 400;
 }
 @media only screen and (max-width: 800px) {
   .testimonialsText h1 {
