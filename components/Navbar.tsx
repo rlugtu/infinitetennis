@@ -17,6 +17,7 @@ const Navbar = () => {
         <div className="navBar">
             <div className="navLogo">
                 <h2>Logo</h2>
+                <h2 className="logoText">Infinite Future Tennis</h2>
             </div>
             <div className="navOptions">
                 <Menu 

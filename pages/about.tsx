@@ -40,8 +40,8 @@ const About = () => {
                             </div>
                             <div className={styles.aboutText}>
                                 <h1>Our Philosophy</h1>
-                                <p>"We have developed a very unique teaching process which is called the Okuda Method. This method can develop players from beginners to true high-performance players, step-by-step.
-                                We believe that true high-performance is about continuing to develop fundamentals at every level, focusing on technical details, and pushing players beyond what they believe to be their physical and mental limit. We understand and respect the differences of each player and develop their specific strengths, technical needs, and their individual personality and confidence."
+                                <p>We have developed a very unique teaching process which is called the Okuda Method. This method can develop players into true high-performance players, step-by-step.
+                                We believe that true high-performance is about continuing to develop fundamentals at every level, focusing on technical details, and pushing players beyond what they believe to be their physical and mental limit. We understand and respect the differences of each player and develop their specific strengths, technical needs, and their individual personality and confidence.
                                 </p>
                             </div>
                         </div>
@@ -53,7 +53,7 @@ const About = () => {
                             
                             <div className={styles.aboutText}>
                                 <h1>Our Team</h1>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum perspiciatis voluptatum, adipisci veritatis qui accusamus repellendus velit rem doloribus, nihil obcaecati necessitatibus assumenda amet magni soluta facilis quae fugit dolores.
+                                <p> The experienced coaching team has been with Tatsumi for many years and are experts of the Okuda Method. In this young team, each coach has a great blend of playing and coaching experience.
                                 </p>
                                 <div className={styles.viewMore1}>
                                     <Link href="/team"><h1 className={styles.viewMoreButton}>View our Team here!</h1>
@@ -83,12 +83,11 @@ const About = () => {
                                     layout="fill"
                                     objectFit="cover"
                                     />
-                                    <h1>Hey</h1>
                                 </div>
                             </div>
                             <div className={styles.aboutText}>
                                 <h1>Alumni</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit facere necessitatibus voluptates reiciendis quo sapiente quisquam perspiciatis totam officia iusto nihil minima dicta natus quis, vitae maiores? Deleniti, molestiae quam.
+                                <p>For 30 years, the reputation of Infinite Future Tennis (formerly Paum Tennis) has thrived through the word-of-mouth of clients. We are proud of our former students and their accomplishments and are grateful that they have contributed their reflections of the program.
                                 </p>
                                 <Link href="/alumni">
                                     <div className={styles.viewMore2}>

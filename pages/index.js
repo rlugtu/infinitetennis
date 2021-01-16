@@ -6,7 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import MobileDetect from "mobile-detect";
 import {useState} from 'react'
 import Link from 'next/link'
-
+import ImageSliderSingle from '../components/ImageSliderSingle'
 // Components
 import Navbar from '../components/Navbar.tsx'
 import Banner from '../components/Banner.tsx'
@@ -35,21 +35,22 @@ const Home = ( {props} ) => {
 
   const responsive = {
     desktop: {
-      breakpoint: { max: 6000, min: 1024 },
-      items: 4,
-      slidesToSlide: 3
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 1
     },
     tablet: {
-      breakpoint: { max: 1024, min: 600 },
-      items: 3,
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
       slidesToSlide: 2
     },
     mobile: {
-      breakpoint: { max: 600, min: 0 },
+      breakpoint: { max: 464, min: 0 },
       items: 1,
       slidesToSlide: 1
     }
   };
+  const media = ['1','2','3','4','1','2','3','4']
   return (
     <div className="bodyContainer">
       <Navbar />
@@ -79,40 +80,22 @@ const Home = ( {props} ) => {
             </div>
             <div className="videoFeedContainer">
               <h1 className="videoHeader">Inside Our Program</h1>
-              <div className="videoSliderContainer">
                 {/* <p>{props.deviceType}</p> */}
-              <Carousel
-                responsive={responsive}
-                ssr
-                showDots
-                infinite
-                swipeable={true}
-                containerClass="container-with-dots"
-                itemClass="image-item"
-                deviceType="desktop"
-                containerClass="carousel-container"
-                itemClass="carousel-item"
-                >
-                    <Image 
-                      src='/contactpic.jpg'
-                      className="video"
-                      layout="fill"
-                      />
-                    <Image 
-                      src='/programphoto1.jpeg'
-                      className="video"
-                      layout="fill"/>
-                    <Image 
-                      src='/contactpic.jpg'
-                      className="video"
-                      layout="fill"/>                  
-                    <Image 
-                    src='/contactpic.jpg'
-                    className="video"
-                    layout="fill"/>                  
-                 
+                <Carousel
+                  responsive={responsive}
+                  ssr
+                  showDots
+                  infinite
+                  // containerClass="container-with-dots"
+                  // itemClass="image-item"
+                  deviceType="desktop"
+                  containerClass="slider-carousel-container"
+                  itemClass="carousel-item"
+                  >
+                    {media.map((el,i) => (
+                      <ImageSliderSingle />
+                    ))}
                 </Carousel>
-              </div>
             </div>
             <div className="contactContainer">
               <Contact />
@@ -120,7 +103,6 @@ const Home = ( {props} ) => {
                 <Image 
                 src='/contactpic.jpg'
                 layout="fill"
-                objectFit="cover"
                 />
               </div>
             </div>

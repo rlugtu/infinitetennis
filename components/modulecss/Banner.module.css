@@ -1,0 +1,90 @@
+.react-multi-carousel-track {
+  height: 100%;
+  width: 100%;
+}
+
+.carouselcontainer {
+  height: 100%;
+  width: 100%;
+}
+
+.bannerContainer {
+  height: 500px;
+  width: 100%;
+  background-color: black;
+  margin-top: 60px;
+  position: relative;
+}
+
+.bannerPicContainer {
+  height: 100%;
+  width: 100vw;
+  position: relative;
+}
+.bannerPic {
+  opacity: 0.8;
+}
+.bannerTextContainer {
+  position: absolute;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  font-size: 3.5rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 20px 0;
+  padding-left: 20px;
+}
+
+.bannerTextContainer h1 {
+  font-size: 6rem;
+  color: white;
+  z-index: 10;
+  margin: 0;
+}
+@media only screen and (max-width: 950px) {
+  .bannerTextContainer h1 {
+    font-size: 5.5rem;
+  }
+  .bannerTextContainer h2 {
+    font-size: 2.5rem;
+  }
+}
+.bannerTextContainer h2 {
+  font-size: 3rem;
+  margin: 0;
+  z-index: 10;
+  color: white;
+}
+
+@media only screen and (max-width: 900px) {
+  .bannerTextContainer h1 {
+    font-size: 4rem;
+  }
+  .bannerTextContainer h2 {
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .bannerContainer {
+    height: 300px;
+  }
+  .bannerTextContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0;
+  }
+  .bannerTextContainer h1 {
+    font-size: 3rem;
+  }
+  .bannerTextContainer h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+  }
+}

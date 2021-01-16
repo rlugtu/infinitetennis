@@ -6,7 +6,7 @@
 .bannerContainer {
   height: 350px;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 80px;
   object-position: 40% 50%;
   position: relative;
   background-color: black;
@@ -44,6 +44,7 @@
   color: white;
   background-color: rgb(42, 93, 155);
   padding: 30px 50px;
+  border-radius: 5px;
 }
 .contactFormContainer h1 {
   font-size: 2rem;

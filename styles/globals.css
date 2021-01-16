@@ -51,24 +51,40 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 0 50px;
-  height: 60px;
+  height: 80px;
   position: fixed;
   top: 0;
   background-color: rgb(42, 93, 155);
   z-index: 1000;
+  color: white;
 }
 .navLogo {
   display: flex;
   color: white;
+  /* margin: 0 20px; */
+}
+.logoText {
+  margin-left: 40px;
 }
 
+@media only screen and (max-width: 900px) {
+  .logoText {
+    display: none;
+  }
+}
+.navList {
+  display: flex;
+  height: 100%;
+  width: 50vw;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .navLink {
-  margin: 0 10px;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white;
   width: 100%;
-  /* z-index: 100 !important; */
+  /* padding: 0 20px; */
 }
 .navLink:hover {
   font-weight: bold;
@@ -113,19 +129,7 @@ a:hover {
     display: none;
   }
 }
-.navList {
-  display: flex;
-  height: 100%;
-  padding-top: 20px;
-}
 
-.navList li {
-  height: 100%;
-  width: 100%;
-}
-.navList li:hover {
-  border-bottom: 2px solid white;
-}
 @media only screen and (max-width: 600px) {
   .navBar {
     padding: 0 10px;
@@ -196,51 +200,50 @@ a:hover {
   }
 }
 
-.bannerContainer {
-  min-height: 400px;
-  width: 100%;
-  background-image: url("../public/banner.jpg");
-  background-position: center;
-  background-size: cover;
-  padding: 20px;
-  margin-top: 60px;
-  display: flex;
+/* .homeBannerContainer {
+  position: relative;
 }
-@media only screen and (max-width: 600px) {
-  .bannerContainer {
-    height: 300px;
-  }
+.homeBannerPicContainer {
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+}
+/* .react-multi-carousel-list {
+  height: 100%;
+  width: 100%;
+} */
+
+/* VIDEO FEED */
+.videoFeedContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(216, 183, 110);
+  padding: 20px 0;
+}
+.videoHeader {
+  color: black;
+  margin: 0;
+}
+.react-multi-carousel-track {
+  height: 100%;
+  width: 100%;
+}
+.slider-carousel-container {
+  width: 100%;
+}
+.sliderPicContainer {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  margin: 0 10px;
 }
 
-.bannerText,
-.bannerText2,
+/* PROGRAMS */
 .programText {
   color: white;
   z-index: 10;
   margin: 0;
-}
-.bannerText {
-  margin-top: 40px;
-  font-size: 5rem;
-}
-.bannerText2 {
-  font-size: 2.5rem;
-  margin: 0;
-  margin-left: 7.5rem;
-}
-
-@media only screen and (max-width: 600px) {
-  .bannerContainer {
-    min-height: 300px;
-  }
-  .bannerText2 {
-    margin: 0;
-    font-size: 2rem;
-  }
-  .bannerText {
-    font-size: 4rem;
-    margin-top: 15px;
-  }
 }
 .programsContainer {
   display: flex;
@@ -273,49 +276,6 @@ a:hover {
 }
 .sp3 {
   background-image: url("../public/programphoto3.jpeg");
-}
-
-/* VIDEO FEED */
-
-.videoFeedContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(216, 183, 110);
-  padding: 20px 0;
-}
-.videoHeader {
-  color: black;
-  margin: 0;
-}
-.videoSliderContainer {
-  width: 100%;
-  padding: 0 40px;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  margin: 10px 0;
-}
-
-/* VIDEO SECTION */
-.videoImageContainer {
-  height: 200px;
-  width: 300px;
-  border: 1px solid black;
-}
-
-.videoThumbnail {
-  border: 2px solid black;
-}
-.carousel-item {
-  /* margin: 0 5px; */
-  border: 5px solid rgb(216, 183, 110);
-  object-fit: fill;
-  height: 200px;
-  width: 300px;
-}
-.video {
-  object-fit: cover;
 }
 
 /* CONTACT FORM  */
