@@ -11,17 +11,17 @@ const Footer = () => {
             </div>
             <div className="footerColumn">
                 <h2>Useful Links</h2>
-                <Link href="/about"><p className="navLink">About Us</p></Link>
-                <Link href="/programs"><p className="navLink">Programs</p></Link>
-                <Link href="/team"><p className="navLink">Our Team</p></Link>
-                <Link href="/alumni"><p className="navLink">Alumni</p></Link>
+                <Link href="/about"><p className="footerLink">About Us</p></Link>
+                <Link href="/programs"><p className="footerLink">Programs</p></Link>
+                <Link href="/team"><p className="footerLink">Our Team</p></Link>
+                <Link href="/alumni"><p className="footerLink">Alumni</p></Link>
             </div>
             <div className="footerColumn">
                 <h2>Contact</h2>
                 <p>Location:</p>
                 <p>Haworth Country Club</p>
                 <p>Waldwick Covered Courts</p>
-                <Link href="/contact"><p className="navLink">Connect with us here</p></Link>
+                <Link href="/contact"><p className="footerLink">Connect with us here</p></Link>
             </div>
         </div>
     )

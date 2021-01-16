@@ -15,7 +15,7 @@ import Contact from '../components/Contact.tsx'
 
 const Index = ( {props} ) => {
   const[deviceType,setDeviceType] = useState(null)
-  
+
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -80,7 +80,8 @@ const Index = ( {props} ) => {
               
             </div>
             
-            <div className="videoFeedContainer">
+            <div 
+            className= 'videoFeedContainer'>
               <h1 className="videoHeader">Inside Our Program</h1>
                 {/* <p>{props.deviceType}</p> */}
                 <Carousel
@@ -100,7 +101,9 @@ const Index = ( {props} ) => {
                     ))}
                 </Carousel>
             </div>
-            <div className="testimonialsContainer">
+            <div 
+             className='testimonialsContainer'
+            >
               {/* <h1 className="testimonialsHeader">Testimonials</h1> */}
                 <Carousel
                   responsive={testimonialsResponsive}
@@ -111,7 +114,7 @@ const Index = ( {props} ) => {
                   containerClass="testimonialsSlider"
                   itemClass="testimonial-carousel-item"
                   autoPlay ={true}
-                  autoPlaySpeed={6000}
+                  autoPlaySpeed={5000}
                   deviceType={deviceType}
                   arrows={false}
                   >
