@@ -17,7 +17,7 @@ const Prospects = (props) => {
             )}
             <div className={styles.playerDescription}>
                 <h1 className={styles.playerName}>{props.name}</h1>
-                <p>{props.description}</p>
+                <p>{props.quote}</p>
             </div>
         </div>
     )

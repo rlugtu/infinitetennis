@@ -12,7 +12,7 @@ import Navbar from '../components/Navbar.tsx'
 import Banner from '../components/Banner.tsx'
 import Footer from '../components/Footer.tsx'
 import Contact from '../components/Contact.tsx'
-
+import Testimonials from '../components/assets/testimonials.json'
 const Index = ( {props} ) => {
   const[deviceType,setDeviceType] = useState(null)
 
@@ -51,7 +51,6 @@ const Index = ( {props} ) => {
     }
   }
   const media = ['1','2','3','4','1','2','3','4']
-  const testimonials = ['1','2','3','4']
   return (
     <div className="bodyContainer">
       <Navbar />
@@ -118,9 +117,10 @@ const Index = ( {props} ) => {
                   deviceType={deviceType}
                   arrows={false}
                   >
-                    {testimonials.map((el,i) => (
+                    {Testimonials.quotes.map((player,i) => (
                      <div className="testimonialsText">
-                       <h1>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam quae dolores hic velit minima ad dicta quas. Aperiam vero excepturi facere atque totam consectetur officia qui aut unde laudantium."</h1>
+                       <h1>"{player.quote}"</h1>
+                       <h2>-{player.name} ({player.bio})</h2>
                      </div>
                     ))}
                 </Carousel>
