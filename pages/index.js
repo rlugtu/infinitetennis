@@ -33,7 +33,25 @@ const Index = ( {props} ) => {
       slidesToSlide: 1
     }
   };
+  const testimonialsResponsive ={
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 1,
+      slidesToSlide: 1
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+      slidesToSlide: 1
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1
+    }
+  }
   const media = ['1','2','3','4','1','2','3','4']
+  const testimonials = ['1','2','3','4']
   return (
     <div className="bodyContainer">
       <Navbar />
@@ -61,6 +79,7 @@ const Index = ( {props} ) => {
               </Link>
               
             </div>
+            
             <div className="videoFeedContainer">
               <h1 className="videoHeader">Inside Our Program</h1>
                 {/* <p>{props.deviceType}</p> */}
@@ -78,6 +97,28 @@ const Index = ( {props} ) => {
                   >
                     {media.map((el,i) => (
                       <ImageSliderSingle />
+                    ))}
+                </Carousel>
+            </div>
+            <div className="testimonialsContainer">
+              {/* <h1 className="testimonialsHeader">Testimonials</h1> */}
+                <Carousel
+                  responsive={testimonialsResponsive}
+                  ssr
+                  showDots
+                  infinite
+                  deviceType="desktop"
+                  containerClass="testimonialsSlider"
+                  itemClass="testimonial-carousel-item"
+                  autoPlay ={true}
+                  autoPlaySpeed={6000}
+                  deviceType={deviceType}
+                  arrows={false}
+                  >
+                    {testimonials.map((el,i) => (
+                     <div className="testimonialsText">
+                       <h1>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam quae dolores hic velit minima ad dicta quas. Aperiam vero excepturi facere atque totam consectetur officia qui aut unde laudantium."</h1>
+                     </div>
                     ))}
                 </Carousel>
             </div>

@@ -48,6 +48,13 @@ const Banner = () => {
                 autoPlaySpeed={5000}
                 >
                     <div className={styles.bannerPicContainer}>
+                        <Image src='/homeBanner/4.jpg'
+                        layout="fill"
+                        objectFit="cover"
+                        className={styles.bannerPic}
+                        />
+                    </div> 
+                    <div className={styles.bannerPicContainer}>
                         <Image src='/homeBanner/2.jpg'
                         layout="fill"
                         objectFit="cover"
@@ -67,7 +74,8 @@ const Banner = () => {
                         objectFit="cover"
                         className={styles.bannerPic}
                         />
-                    </div>                    
+                    </div>
+                                          
                 </Carousel>
         </div>
         

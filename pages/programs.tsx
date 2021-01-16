@@ -36,32 +36,33 @@ const Programs = () => {
                         onClick = {() => activateDescriptionFunc(programsText.fitness.description)}
                     >
                         <div className={styles.trainingPicContainer}>
-                            <Image src="/contactPage/contactBanner.jpg"
+                            <Image src="/programsPics/fitness.jpg"
                                 layout="fill"
                                 objectFit="cover"                
                             />
                         </div>
-                        <h1>Fitness</h1>
+                        <h2>Fitness</h2>
                     </div>
                     <div className={styles.singleTrainingContainer}
                         onClick = {() => activateDescriptionFunc(programsText.drills.description)}>
                         <div className={styles.trainingPicContainer}>
-                            <Image src="/contactPage/contactBanner.jpg"
+                            <Image src="/programsPics/drills.jpg"
                                 layout="fill"
                                 objectFit="cover"                
                             />
                         </div>
-                        <h1>Drills</h1>
+                        <h2>Drills</h2>
                     </div>
                     <div className={styles.singleTrainingContainer}
                         onClick = {() => activateDescriptionFunc(programsText.pointplay.description)}>
                         <div className={styles.trainingPicContainer}>
-                            <Image src="/contactPage/contactBanner.jpg"
+                            <Image 
+                                src="/contactPage/contactBanner.jpg"
                                 layout="fill"
                                 objectFit="cover"                
                             />
                         </div>
-                        <h1>Point Play</h1>
+                        <h2>Point Play</h2>
                     </div>
                     <div 
                         className={styles.singleTrainingContainer}
@@ -73,7 +74,7 @@ const Programs = () => {
                                 objectFit="cover"                
                             />
                         </div>
-                        <h1>Match Play</h1>
+                        <h2>Match Play</h2>
                     </div>
                 </div>
                 {activateDescription && (
