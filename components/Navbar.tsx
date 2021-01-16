@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 const Navbar = () => {
     const[isOpen, setIsOpen] = useState(false)
-    const[aboutActive, setAboutActive] = useState(false)
+    const[aboutActive, setAboutActive] = useState(true)
     const[programsActive, setProgramsActive] = useState(false)
     const toggleBurger = () => {
         setIsOpen(!isOpen)
@@ -45,6 +45,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <div 
+                    className={aboutActive=== true && "navActivate"}
                    onMouseOver={() => setAboutActive(true)}
                    onMouseLeave={() => setAboutActive(false)}
                     >
@@ -55,26 +56,22 @@ const Navbar = () => {
                             onMouseLeave={() => setAboutActive(false)}
                             >
                                 <Link href="/about">
-                                    <a className="dropdownLink">About Us</a>
+                                    <a className="dropdownLink dropdownStart">About Us</a>
                                 </Link>
                                 <Link href="/team">
                                     <a className="dropdownLink">Our Team</a>
                                 </Link>
                                 <Link href="/alumni">
-                                    <a className="dropdownLink">Alumni
+                                    <a className="dropdownLink dropdownLast">Alumni
                                     </a>
                                 </Link>
                             </div>
                         )}                      
                     </div>
-                    <div 
-                   onMouseOver={() => setProgramsActive(true)}
-                   onMouseLeave={() => setProgramsActive(false)}
-                    >
-                        <li className="navLink">
-                            <Link href="/programs"><a className="navLink">Programs</a>
-                                </Link></li>                 
-                    </div>
+                    <li className="navLink">
+                        <Link href="/programs">
+                            <a>Programs</a>
+                        </Link></li>                 
                    <li>
                         <Link href="/contact">
                             <a className="navLink">Contact</a>
