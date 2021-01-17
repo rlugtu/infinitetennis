@@ -19,9 +19,9 @@ const Prospects = (props) => {
             <div className={styles.playerDescription}>
                 <h1 className={styles.playerName}>{props.name}</h1>
                 {props.bio && (
-                    <p>{props.bio}</p>
+                    <p className={styles.playerBio}>{props.bio}</p>
                 )}
-                <p>{props.quote}</p>
+                <p className={styles.playerQuote}>{props.quote}</p>
             </div>
         </div>
     )
