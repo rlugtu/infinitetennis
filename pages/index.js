@@ -6,7 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import MobileDetect from "mobile-detect";
 import {useState} from 'react'
 import Link from 'next/link'
-import ImageSliderSingle from '../components/ImageSliderSingle'
+
 // Components
 import Navbar from '../components/Navbar.tsx'
 import Banner from '../components/Banner.tsx'
@@ -17,20 +17,22 @@ const Index = ( {props} ) => {
   const[deviceType,setDeviceType] = useState(null)
 
   const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 4
+    },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-      slidesToSlide: 1
+      items: 4
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-      slidesToSlide: 2
+      breakpoint: { max: 1024, min: 600 },
+      items: 3
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-      slidesToSlide: 1
+      breakpoint: { max: 600, min: 0 },
+      items: 1
     }
   };
   const testimonialsResponsive ={
@@ -40,12 +42,12 @@ const Index = ( {props} ) => {
       slidesToSlide: 1
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 600 },
       items: 1,
       slidesToSlide: 1
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 600, min: 0 },
       items: 1,
       slidesToSlide: 1
     }
@@ -88,15 +90,20 @@ const Index = ( {props} ) => {
                   ssr
                   showDots
                   infinite
-                  // containerClass="container-with-dots"
-                  // itemClass="image-item"
+                  itemClass="singleSlide"
                   deviceType="desktop"
-                  containerClass="slider-carousel-container"
+                  containerClass="sliderContainer"
                   itemClass="carousel-item"
-                  deviceType={deviceType}
+                  deviceType="mobile"
                   >
                     {media.map((el,i) => (
-                      <ImageSliderSingle />
+                      <Image 
+                      src='/contactpic.jpg'
+                      layout="fill"
+                      // height={200}
+                      // width={300}
+                      objectFit="cover"
+                      />
                     ))}
                 </Carousel>
             </div>
@@ -109,18 +116,30 @@ const Index = ( {props} ) => {
                   ssr
                   showDots
                   infinite
-                  deviceType="desktop"
+                  deviceType="tablet"
                   containerClass="testimonialsSlider"
                   itemClass="testimonial-carousel-item"
                   autoPlay ={true}
                   autoPlaySpeed={5000}
-                  deviceType={deviceType}
+                  // deviceType={props.deviceType}
                   arrows={false}
+                  swipeable={false}
                   >
                     {Testimonials.quotes.map((player,i) => (
                      <div className="testimonialsText">
-                       <h1>"{player.quote}"</h1>
-                       <h2>-{player.name} ({player.bio})</h2>
+                      <h1>"{player.quote}"</h1>
+                      
+                         
+                       <h2 className="testimonialName">{player.name}</h2>
+                       <h2 className="testimonialBio">{player.bio}</h2>
+                      <div className="leftquoteContainer">
+                          <Image src="/icons/leftQuote.svg" 
+                          layout="fill"/>
+                      </div>
+                      <div className="rightquoteContainer">
+                          <Image src="/icons/rightQuote.svg" 
+                          layout="fill"/>
+                      </div>
                      </div>
                     ))}
                 </Carousel>
@@ -138,25 +157,26 @@ const Index = ( {props} ) => {
       <Footer />
     </div>
   )
-}
-Index.getInitialProps = async ({ req }) => {
-  let userAgent;
-  let deviceType;
-  if (req) {
-    userAgent = req.headers["user-agent"];
-  } else {
-    userAgent = navigator.userAgent;
+  Index.getInitialProps = async ( req ) => {
+    let userAgent ;
+    let deviceType;
+    if (req) {
+      userAgent = req.headers["user-agent"];
+    } else {
+      userAgent = navigator.userAgent;
+    }
+    const md = new MobileDetect(userAgent);
+    if (md.tablet()) {
+      deviceType = "tablet";
+    } else if (md.mobile()) {
+      deviceType = "mobile";
+    } else {
+      deviceType = "desktop";
+    }
+    return { deviceType: deviceType };
   }
-  const md = new MobileDetect(userAgent);
-  if (md.tablet()) {
-    deviceType = "tablet";
-  } else if (md.mobile()) {
-    deviceType = "mobile";
-  } else {
-    deviceType = "desktop";
-  }
-  return { deviceType: deviceType };
 }
+
 
 
 export default Index
