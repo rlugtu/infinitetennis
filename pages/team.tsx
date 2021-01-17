@@ -14,15 +14,15 @@ const Team = () => {
                     <div className={styles.headCoachPicContainer}>
                         <Image 
                             src='/coaches/coachPic.jpg'
-                            className={styles.coachPic}
+                            className={styles.headCoachPic}
                             layout="fill"
                             objectFit="cover"
 
                         />
                     </div>
                     <div className={styles.headCoachDescription}>
-                        <h1>Head Coach</h1>
                         <h1 className={styles.coachName}>Tatsumi Okuda</h1>
+                        <h2>Head Coach</h2>
                         <p>Tatsumi has been in the tennis industry for 38 years. He started his own business 28 years ago, and since then, has created a strong reputation in the New Jersey and New York region. He has coached hundreds of successful junior players. His most well-known former students are Christina McHale (WTA highest ranking #24) and Kristie Ahn (WTA highest ranking #93). Countless others he has coached, have reached varsity high school and collegiate tennis level, and have been top players in the section and nation. He is known for his teaching kids about work ethic and love for the game, and that improvement comes from consistent and diligent thought and work.
                         </p>
                     </div>

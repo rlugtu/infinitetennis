@@ -45,7 +45,7 @@ const Navbar = () => {
                         </Link>
                     </li>
                     <div 
-                    className={aboutActive=== true && "navActivate"}
+                    className={aboutActive=== true ? "navActivate": undefined}
                    onMouseOver={() => setAboutActive(true)}
                    onMouseLeave={() => setAboutActive(false)}
                     >

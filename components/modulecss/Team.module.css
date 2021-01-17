@@ -22,6 +22,9 @@
 .headCoachContainer {
   display: flex;
   margin: 40px 10px;
+  background-color: white;
+  border-radius: 10px;
+  /* padding: 40px; */
 }
 .headCoachPicContainer {
   width: 40%;
@@ -32,27 +35,60 @@
 @media only screen and (max-width: 600px) {
   .headCoachContainer {
     flex-wrap: wrap;
+    padding: 0;
   }
   .headCoachPicContainer {
     width: 100%;
   }
   .headCoachDescription {
-    padding: 0 20px;
+    padding: 20px;
     width: 100% !important;
+  }
+  .headCoachDescription h1 {
+    margin: 10px 0;
+  }
+  .teamContentContainer {
+    padding: 0;
+  }
+  .headCoachDescription p {
+    padding-bottom: 15px;
   }
 }
 
 .headCoachDescription {
-  padding: 0 20px;
+  padding: 40px;
   width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .headCoachDescription * {
   margin: 0;
+  margin-top: 10px;
 }
 .headCoachDescription p {
   font-size: 1.2rem;
+  color: rgb(50, 50, 50);
 }
-
+.coachName {
+  margin: 0;
+  font-size: 2.2rem;
+}
+.headCoachDescription h2 {
+  font-size: 1.8rem;
+  color: rgb(142, 59, 70);
+}
+.headCoachPic {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .headCoachPic {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+}
 .currentCoachesContainer {
   display: flex;
   margin: 20px 0px;
@@ -61,16 +97,18 @@
 }
 .singleCoachContainer {
   margin: 10px;
-  width: 23%;
+  /* width: 23%; */
   min-width: 200px;
+  width: 23%;
+  background-color: white;
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 1055px) {
   .currentCoachesContainer {
-    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   .singleCoachContainer {
-    justify-content: center;
-    width: 100%;
+    width: 30%;
   }
 }
 @media only screen and (max-width: 900px) {
@@ -83,6 +121,16 @@
     padding: 20px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .currentCoachesContainer {
+    flex-wrap: wrap;
+  }
+  .singleCoachContainer {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
 .coachPicContainer {
   max-width: 100%;
   height: 200px;
@@ -90,8 +138,40 @@
   margin-right: auto;
   position: relative;
 }
-
+.coachPic {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.singleCoachDescription {
+  /* padding: 20px; */
+  border-radius: 10px;
+  color: rgb(50, 50, 50);
+}
+.singleCoachContainer {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 .singleCoachDescription * {
   margin: 0;
-  padding: 5px;
+  background-color: white;
+}
+.singleCoachDescription h1 {
+  padding: 20px;
+  padding-bottom: 0;
+  font-size: 1.6rem;
+}
+.singleCoachDescription p {
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+@media only screen and (max-width: 900px) {
+  .singleCoachDescription h1 {
+    padding: 0;
+  }
+  .singleCoachDescription p {
+    padding: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
 }

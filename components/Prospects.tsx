@@ -12,11 +12,15 @@ const Prospects = (props) => {
                         // width={400}
                         layout="fill"
                         objectFit="cover"
+                        className={styles.alumniPic}
                 />
             </div>
             )}
             <div className={styles.playerDescription}>
                 <h1 className={styles.playerName}>{props.name}</h1>
+                {props.bio && (
+                    <p>{props.bio}</p>
+                )}
                 <p>{props.quote}</p>
             </div>
         </div>
