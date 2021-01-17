@@ -34,21 +34,17 @@
 .playerDescription p {
   margin: 0;
 }
-.playerBio {
-  background-color: rgb(142, 59, 70);
-  color: white;
-}
 .playerName {
   margin: 0;
   width: 100%;
   padding-top: 20px;
   padding-left: 20px;
-  background-color: rgb(142, 59, 70);
+  background-color: rgba(142, 59, 70, 0.95);
   color: white;
   border-top-right-radius: 10px;
 }
 .playerBio {
-  background-color: rgb(142, 59, 70);
+  background-color: rgba(142, 59, 70, 0.95);
   color: rgb(235, 235, 235);
   padding-bottom: 20px;
   padding-left: 20px;
