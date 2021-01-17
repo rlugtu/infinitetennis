@@ -4,7 +4,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
-  max-width: 1400px;
+  max-width: 1200px;
   padding: 20px 30px;
 }
 @media only screen and (max-width: 600px) {
@@ -76,13 +76,15 @@
     width: 100%;
   }
   .playerDescription {
-    padding: 0 20px;
+    padding: 0;
     width: 100%;
-    margin-top: 20px;
   }
   .alumniPic {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 0;
-    border-top-right-radius: 10px;
+    border-top-right-radius: 0;
+  }
+  .playerName {
+    border-top-right-radius: 0;
   }
 }
