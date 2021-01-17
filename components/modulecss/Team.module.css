@@ -37,13 +37,13 @@
     width: 100%;
   }
   .headCoachDescription {
-    padding: 0 10px;
+    padding: 0 20px;
     width: 100% !important;
   }
 }
 
 .headCoachDescription {
-  padding: 0 10px;
+  padding: 0 20px;
   width: 60%;
 }
 .headCoachDescription * {
@@ -93,5 +93,5 @@
 
 .singleCoachDescription * {
   margin: 0;
-  padding: 0 5px;
+  padding: 5px;
 }

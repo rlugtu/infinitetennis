@@ -7,6 +7,12 @@
   max-width: 1400px;
   padding: 20px 30px;
 }
+@media only screen and (max-width: 600px) {
+  .contentContainer {
+    padding: 0;
+    margin-top: 80px;
+  }
+}
 .pageHeader {
   text-align: center;
   font-size: 3rem;
@@ -41,5 +47,6 @@
   .playerDescription {
     padding: 0 20px;
     width: 100%;
+    margin-top: 20px;
   }
 }

@@ -66,6 +66,7 @@ li {
   display: flex;
   color: white;
   /* margin: 0 20px; */
+  align-items: center;
 }
 .logoText {
   margin-left: 40px;
@@ -76,6 +77,11 @@ li {
     font-size: 1.2rem;
     display: flex;
     align-items: center;
+  }
+}
+@media only screen and (max-width: 815px) {
+  .logoText {
+    display: none;
   }
 }
 @media only screen and (max-width: 600px) {

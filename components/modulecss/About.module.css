@@ -141,22 +141,21 @@
 .aboutText h1 {
   font-size: 3.5rem;
 }
-@media only screen and (min-width: 1400px) {
-  .teamHeaderText {
-    padding-right: 10%;
-  }
-  .philosophyTextHeader,
-  .alumniTextHeader {
-    padding-left: 10%;
+
+@media only screen and (max-width: 600px) {
+  .aboutText {
+    padding: 20px;
   }
 }
-@media only screen and (min-width: 1800px) {
-  .teamHeaderText {
-    padding-right: 20%;
+@media only screen and (max-width: 800px) {
+  .aboutText {
+    padding: 30px;
   }
-  .philosophyTextHeader,
-  .alumniTextHeader {
-    padding-left: 20%;
+  .aboutText h1 {
+    font-size: 2rem;
+  }
+  .aboutText p {
+    font-size: 1rem;
   }
 }
 .viewMore1 {
