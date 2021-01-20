@@ -52,7 +52,7 @@ const Index = ( {props} ) => {
       slidesToSlide: 1
     }
   }
-  const media = ['1','2','3','4','1','2','3','4']
+  const media = ['1','2','3','4']
   return (
     <div className="bodyContainer">
       <Navbar />
@@ -98,7 +98,7 @@ const Index = ( {props} ) => {
                   >
                     {media.map((el,i) => (
                       <Image 
-                      src='/contactpic.jpg'
+                      src={'/homepage/gallery/' + el + '.jpg'}
                       layout="fill"
                       // height={200}
                       // width={300}

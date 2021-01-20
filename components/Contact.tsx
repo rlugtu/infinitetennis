@@ -6,9 +6,6 @@ import { makeStyles } from '@material-ui/core/styles';
 
 
   const useStyles = makeStyles({
-    inputFirst: {
-        paddingRight: 20
-      },
     button: {
         fontSize: 15,
         color: 'white',
