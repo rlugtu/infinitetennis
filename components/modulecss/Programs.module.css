@@ -23,13 +23,13 @@
   align-items: center;
   margin: 0;
 }
-.bannerDescription {
+/* .bannerDescription {
   position: absolute;
   font-size: 1rem;
   bottom: 0;
   color: white;
   padding: 0 40px;
-}
+} */
 @media only screen and (max-width: 600px) {
   .bannerText {
     font-size: 3.5rem;
@@ -38,15 +38,58 @@
     height: 300px;
   }
 }
-
+.levelAndSchedule {
+  padding-top: 40px;
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  /* flex-wrap: wrap; */
+}
+.levelsContainer {
+  margin: 0 20px;
+}
+.levelsContainer h1 {
+  font-size: 2.5rem;
+  color: rgb(80, 80, 80);
+  margin: 0;
+  padding-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+  .levelAndSchedule {
+    flex-wrap: wrap;
+  }
+}
+.levelTitle h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.levelTitle li {
+  padding-left: 1rem;
+  margin-top: 5px;
+  color: rgb(80, 80, 80);
+}
+.red {
+  color: rgba(142, 59, 70, 1);
+}
+.orange {
+  color: rgb(250, 148, 65);
+}
+.green {
+  color: #4f9d69;
+}
+.blue {
+  color: rgb(42, 93, 155);
+}
 .programsContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   background-color: rgb(238, 238, 238);
   padding: 20px 0;
   padding-bottom: 40px;
+  margin: 0 20px;
 }
 .programsContainer h1 {
   font-size: 2.5rem;
@@ -54,7 +97,6 @@
   color: rgb(80, 80, 80);
 }
 .programsContainer p {
-  padding: 0 10px;
   color: rgb(80, 80, 80);
 }
 .sessionContainer {

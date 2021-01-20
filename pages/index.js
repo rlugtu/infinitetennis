@@ -148,8 +148,9 @@ const Index = ( {props} ) => {
               <Contact />
               <div className="imageContainer">
                 <Image 
-                src='/contactpic.jpg'
+                src='/homepage/contact.jpg'
                 layout="fill"
+                objectFit="cover"
                 />
               </div>
             </div>

@@ -13,7 +13,7 @@ const Team = () => {
                 <div className={styles.headCoachContainer}>
                     <div className={styles.headCoachPicContainer}>
                         <Image 
-                            src='/coaches/coachPic.jpg'
+                            src='/coaches/tatsumi.jpg'
                             className={styles.headCoachPic}
                             layout="fill"
                             objectFit="cover"

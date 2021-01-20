@@ -11,6 +11,9 @@ const Banner = () => {
         slidesToShow: 1,
         slidesToScroll: 1
       };
+      let images = [
+        "4","6","3","7"
+      ]
 
       const responsive = {
         desktop: {
@@ -48,34 +51,16 @@ const Banner = () => {
                 autoPlaySpeed={5000}
                 arrows={false}
                 >
-                    <div className={styles.bannerPicContainer}>
-                        <Image src='/homeBanner/4.jpg'
-                        layout="fill"
-                        objectFit="cover"
-                        className={styles.bannerPic}
-                        />
+                  {images.map((image,i) => (
+                     <div className={styles.bannerPicContainer}>
+                     <Image src={'/homepage/homeBanner/' + image + '.jpg'}
+                     layout="fill"
+                     objectFit="cover"
+                     className={styles.bannerPic}
+                     />
                     </div> 
-                    <div className={styles.bannerPicContainer}>
-                        <Image src='/homeBanner/2.jpg'
-                        layout="fill"
-                        objectFit="cover"
-                        className={styles.bannerPic}
-                        />
-                    </div>
-                    <div className={styles.bannerPicContainer}>
-                        <Image src='/homeBanner/1.jpg'
-                        layout="fill"
-                        objectFit="cover"
-                        className={styles.bannerPic}
-                        />
-                    </div>
-                    <div className={styles.bannerPicContainer}>
-                        <Image src='/homeBanner/3.jpg'
-                        layout="fill"
-                        objectFit="cover"
-                        className={styles.bannerPic}
-                        />
-                    </div>
+                  ))}
+              
                                           
                 </Carousel>
         </div>

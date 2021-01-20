@@ -26,7 +26,6 @@ const Programs = () => {
                 
                 />
                 <h1 className={styles.bannerText}>Programs</h1>
-                <p className={styles.bannerDescription}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, rerum esse dolore amet facere minima repudiandae voluptatibus hic magnam tempora dolores fuga odio doloribus modi assumenda libero. Perferendis, provident non!</p>
             </div>
             
             <div className={styles.developmentContainer}>
@@ -84,8 +83,28 @@ const Programs = () => {
                     />
                 )}
             </div>
-            
-            <div className={styles.programsContainer}>
+           <div className={styles.levelAndSchedule}>
+                <div className={styles.levelsContainer}>
+                    <h1>Levels</h1>
+                    <ul className={styles.levelTitle}>
+                        <h3 className={styles.red}>Red and Orange Ball</h3>
+                        <li>4-8 years old</li>
+                    </ul>
+                    <ul className={styles.levelTitle}>
+                        <h3 className={styles.orange}>Future Stars</h3>
+                        <li>9-12 years old, advanced beginners</li>
+                    </ul>
+                    <ul className={styles.levelTitle}>
+                        <h3 className={styles.green}>Pre-Tournament Level</h3>
+                        <li>9-14 years old, pre-tournament/early tournament level</li>
+                    </ul>
+                    <ul className={styles.levelTitle}>
+                        <h3 className={styles.blue}>High-Performance</h3>
+                        <li>12-18 years old, top section players and national/international competition level.</li>
+                    </ul>
+                    
+                </div>
+                <div className={styles.programsContainer}>
                 <h1>Schedule</h1>
                 <p>Tentative Schedule. Contact us for pricing and detailed schedules on time slots</p>
                     <div className={styles.sessionContainer}>
@@ -122,10 +141,10 @@ const Programs = () => {
                         </h1>
                         <p>Schedule based on availability</p>
                     </div>
-                </div>
-                
-                
+                </div>  
             </div>
+           </div>
+            
             
             <Footer/>
         </div>
