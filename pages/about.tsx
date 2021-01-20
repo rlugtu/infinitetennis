@@ -3,8 +3,26 @@ import styles from '../components/modulecss/About.module.css'
 import Footer from '../components/Footer'
 import Image from "next/image"
 import Link from 'next/link'
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 const About = () => {
+    const useStyles = makeStyles({
+        button: {
+            fontSize: 15,
+            color: 'white',
+            width: 200,
+            height: 50,
+            cursor: 'pointer',
+            backgroundColor: "#8f3b46",
+            '&:hover':{
+                color: '#8f3b46',
+            },
+            marginTop:20,
+        }
+    })
+    const classes = useStyles()
+
     return (
         <div className="pageContainer">
             <Navbar />
@@ -55,10 +73,15 @@ const About = () => {
                                 <h1>Our Team</h1>
                                 <p> The experienced coaching team has been with Tatsumi for many years and are experts of the Okuda Method. In this young team, each coach has a great blend of playing and coaching experience.
                                 </p>
-                                <div className={styles.viewMore1}>
-                                    <Link href="/team"><h1 className={styles.viewMoreButton}>View our Team here!</h1>
+                                    <Link href="/team">
+                        
+                                        <Button
+                                        className={classes.button}
+                                        variant="contained"
+                                        >View Our Team</Button>
+                                       
+                               
                                     </Link>
-                                </div>
                             </div>
                             <div className={styles.aboutHeader}>
                                 <div className={styles.aboutHeaderImage}>
@@ -90,9 +113,10 @@ const About = () => {
                                 <p>For 30 years, the reputation of Infinite Future Tennis (formerly Paum Tennis) has thrived through the word-of-mouth of clients. We are proud of our former students and their accomplishments and are grateful that they have contributed their reflections of the program.
                                 </p>
                                 <Link href="/alumni">
-                                    <div className={styles.viewMore2}>
-                                        <h1 className={styles.viewMoreButton}>View Alumni here!</h1>
-                                    </div>
+                                    <Button
+                                    className={classes.button}
+                                    variant="contained"
+                                    >View Our Alumni</Button>
                                 </Link>
                             </div>
                         </div>

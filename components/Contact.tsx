@@ -1,14 +1,28 @@
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
-import { withStyles, makeStyles } from "@material-ui/core/styles";
 import styles from './modulecss/Contact.module.css'
 import emailjs from 'emailjs-com'
+import { makeStyles } from '@material-ui/core/styles';
 
-const useStyles = makeStyles((theme) => ({
+
+  const useStyles = makeStyles({
     inputFirst: {
         paddingRight: 20
-      }, 
-  }));
+      },
+    button: {
+        fontSize: 15,
+        color: 'white',
+        height: 50,
+        cursor: 'pointer',
+        backgroundColor: "orange",
+        '&:hover':{
+            color: '#2a5d9b',
+            backgroundColor: "white",
+
+        },
+        marginTop:20,
+    }
+})
   
 const ContactForm = () => {
     const classes = useStyles()
@@ -36,7 +50,12 @@ const ContactForm = () => {
                 <input className={styles.input}type="number" name="phone" />
                 <label>Message</label>
                 <textarea className={styles.textArea} name="message" rows={5} cols={5}/>
-                <input className={styles.submitButton}type="submit" value="Send" />
+                <Button
+                type="submit"
+                className={classes.button}>
+                 Submit             
+                </Button>
+                {/* <input className={styles.submitButton}type="submit" value="Send" /> */}
             </form>
         </div>
     )
