@@ -6,7 +6,6 @@ import 'react-multi-carousel/lib/styles.css';
 import MobileDetect from "mobile-detect";
 import {useState} from 'react'
 import Link from 'next/link'
-import ModalVideo from 'react-modal-video'
 
 
 // Components
