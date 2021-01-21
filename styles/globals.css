@@ -569,6 +569,9 @@ a:hover {
   width: 33%;
   margin: 0 20px;
 }
+.footerColumn .copyrightText {
+  font-size: 0.8rem;
+}
 .footerColumn h1,
 .footerColumn h2 {
   margin: 0;
