@@ -16,8 +16,8 @@ const Prospects = (props) => {
                 />
             </div>
             )}
-            <div className={styles.playerDescription}>
-                <h1 className={styles.playerName}>{props.name}</h1>
+            <div className={props.pic? styles.playerDescription : styles.playerDescriptionNoPic}>
+                <h1 className={props.pic? styles.playerName : styles.playerNameNoPic}>{props.name}</h1>
                 {props.bio && (
                     <p className={styles.playerBio}>{props.bio}</p>
                 )}

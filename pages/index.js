@@ -6,6 +6,8 @@ import 'react-multi-carousel/lib/styles.css';
 import MobileDetect from "mobile-detect";
 import {useState} from 'react'
 import Link from 'next/link'
+import ModalVideo from 'react-modal-video'
+
 
 // Components
 import Navbar from '../components/Navbar.tsx'
@@ -13,6 +15,7 @@ import Banner from '../components/Banner.tsx'
 import Footer from '../components/Footer.tsx'
 import Contact from '../components/Contact.tsx'
 import Testimonials from '../components/assets/testimonials.json'
+import SingleVideo from '../components/SingleVideo'
 const Index = ( {props} ) => {
   const[deviceType,setDeviceType] = useState(null)
 
@@ -105,6 +108,7 @@ const Index = ( {props} ) => {
                       objectFit="cover"
                       />
                     ))}
+                    {/* <SingleVideo /> */}
                 </Carousel>
             </div>
             <div 

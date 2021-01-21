@@ -101,7 +101,6 @@
   /* width: 23%; */
   min-width: 200px;
   width: 23%;
-  background-color: white;
 }
 
 @media only screen and (max-width: 1055px) {
@@ -153,7 +152,6 @@
 }
 .singleCoachDescription * {
   margin: 0;
-  background-color: white;
 }
 .singleCoachDescription h1 {
   padding: 20px;
@@ -169,14 +167,21 @@
   padding: 20px;
   position: relative;
 }
+.singleCoachName {
+  background-color: white;
+}
 .coachDescription {
   height: 120px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
 
 .coachDescriptionAll {
   overflow: auto;
   /* height: 100%; */
+  background-color: white;
 }
 .iconContainer {
   width: 100%;

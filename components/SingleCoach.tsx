@@ -33,7 +33,7 @@ const SingleCoach = (props) => {
                 />     
             </div>                    
             <div className={styles.singleCoachDescription}>
-                <h1>{props.name}</h1>
+                <h1 className={styles.singleCoachName}>{props.name}</h1>
                 <p className={expanded ? styles.coachDescriptionAll: styles.coachDescription}>{props.description}</p>
                
                 {/* <button onClick={()=> setExpanded(!expanded)}>click me</button> */}

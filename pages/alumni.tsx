@@ -4,6 +4,7 @@ import styles from '../components/modulecss/Alumni.module.css'
 import Image from "next/image"
 import Prospects from '../components/Prospects'
 import Bios from '../components/assets/prospects.json'
+import Prospects2 from '../components/ProspectsNoPic'
 const Alumni = () => {
     return (
         <div>
@@ -17,6 +18,13 @@ const Alumni = () => {
                             
                         />
                     ))}
+                    {/* <div className={styles.noPicTestimonials}>
+                        {Bios.alumni2.map((player,i) => (
+                            <Prospects2 
+                            {...player}
+                            />
+                        ))}
+                    </div> */}
                 </div>
             <Footer />
         </div>

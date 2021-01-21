@@ -50,6 +50,7 @@
   padding-bottom: 20px;
   padding-left: 20px;
   padding-top: 10px;
+  margin: 0;
 }
 .playerQuote {
   padding: 20px;
@@ -84,4 +85,22 @@
   .playerName {
     border-top-right-radius: 0;
   }
+}
+.playerDescriptionNoPic {
+  width: 100%;
+  /* padding: 20px 40px; */
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 10px;
+}
+.playerNameNoPic {
+  margin: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: rgba(142, 59, 70, 0.95);
+  color: white;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  font-size: 1.5rem;
 }
