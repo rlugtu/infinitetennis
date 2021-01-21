@@ -1,10 +1,8 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import styles from '../components/modulecss/Alumni.module.css'
-import Image from "next/image"
 import Prospects from '../components/Prospects'
 import Bios from '../components/assets/prospects.json'
-import Prospects2 from '../components/ProspectsNoPic'
 const Alumni = () => {
     return (
         <div>
