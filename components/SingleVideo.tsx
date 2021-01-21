@@ -1,6 +1,3 @@
-import Image from "next/image"
-import ModalVideo from 'react-modal-video'
-import {useState} from 'react'
 import styles from './modulecss/SingleVideo.module.css'
 import ReactPlayer from 'react-player'
 
