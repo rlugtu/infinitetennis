@@ -36,10 +36,16 @@ const Navbar = () => {
                         <a className="mobileNavLink">Home</a>
                     </Link>
                     <Link href="/about">
-                        <a className="mobileNavLink">About</a>
+                        <a className="mobileNavLink">About Us</a>
                     </Link>
-                    <Link href="/">
+                    <Link href="/team">
+                        <a className="mobileNavLink">Our Team</a>
+                    </Link>
+                    <Link href="/programs">
                         <a className="mobileNavLink">Programs</a>
+                    </Link>
+                    <Link href="/alumni">
+                        <a className="mobileNavLink">Our Alumni</a>
                     </Link>
                     <Link href="/contact">
                         <a className="mobileNavLink">Contact</a>
