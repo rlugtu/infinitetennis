@@ -107,7 +107,7 @@ const Index = ( {props} ) => {
                   itemClass="carousel-item"
                   deviceType="mobile"
                   transitionDuration={100}
-                  slidesToSlide={2}
+                  slidesToSlide={1}
                   >
                     {media.map((el,i) => (
                       <Image 
