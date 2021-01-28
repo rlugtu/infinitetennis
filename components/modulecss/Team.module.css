@@ -117,7 +117,7 @@
     display: flex;
     justify-content: center;
   }
-  .singleCoachDescription {
+  .singleCoachDescription h1 {
     padding: 20px;
   }
 }
@@ -196,10 +196,10 @@
 }
 @media only screen and (max-width: 900px) {
   .singleCoachDescription h1 {
-    padding: 0;
+    padding: 20px;
   }
   .singleCoachDescription p {
-    padding: 0;
+    padding: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
