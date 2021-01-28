@@ -7,13 +7,28 @@
   width: 100% !important;
 }
 .bannerContainer {
-  height: 65vh;
+  height: 75vh;
   width: 100%;
   background-color: black;
   margin-top: 70px;
   position: relative;
 }
-
+.bannerLogoContainer {
+  position: absolute;
+  min-width: 300px;
+  min-height: 300px;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  .bannerLogoContainer {
+    min-width: 200px;
+    min-height: 200px;
+  }
+}
 .bannerPicContainer {
   height: 100%;
   width: 100vw;
@@ -37,7 +52,7 @@
 }
 
 .bannerTextContainer h1 {
-  font-size: 6rem;
+  font-size: 5.5rem;
   color: white;
   z-index: 10;
   margin: 0;

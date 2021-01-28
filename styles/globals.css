@@ -54,7 +54,7 @@ li {
 .navBar {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   padding: 0 50px;
   height: 70px;
@@ -63,15 +63,26 @@ li {
   background-color: rgb(42, 93, 155);
   z-index: 1000;
   color: white;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.5),
+    1px 5px 15px 1px rgba(0, 0, 0, 0.3), 0px 1px 20px 0px rgba(0, 0, 0, 0.15);
+}
+.navLogoContainer {
+  height: 80%;
+  width: 100px;
+  position: relative;
 }
 .navLogo {
   display: flex;
   color: white;
   /* margin: 0 20px; */
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
 }
 .logoText {
-  margin-left: 40px;
+  margin: 0;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 900px) {
@@ -114,7 +125,7 @@ li {
   width: 100%;
   /* padding: 0 20px; */
   padding: 0 20px;
-  font-weight: 600;
+  font-weight: 400;
   height: 100%;
   display: flex;
   align-items: center;
@@ -284,6 +295,34 @@ a:hover {
   }
 }
 
+/* PHILOSOPHY SECTION */
+.philosophyContainer {
+  padding: 40px 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #8abae4;
+}
+.philosophyContainer h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+.philosophyContainer p {
+  font-size: 1.2rem;
+  color: white;
+  font-family: "Merriweather", serif;
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .philosophyContainer h1 {
+    font-size: 2rem;
+  }
+  .philosophyContainer p {
+    font-size: 1rem;
+  }
+}
+
 /* TESTIMONIALS */
 .testimonialsContainer {
   width: 100%;
@@ -449,10 +488,20 @@ a:hover {
   z-index: 10;
   margin: 0;
 }
+.programsBackground {
+  opacity: 0.2;
+}
 .programsContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  /* background-color: #376c48; */
+  /* background-image: url("../public/homepage/programs/3.jpg"); */
+  /* background-size: cover; */
+  background-color: black;
+  object-fit: contain;
+  padding: 60px;
+  position: relative;
 }
 
 .singleProgramContainer {
@@ -460,17 +509,26 @@ a:hover {
   justify-content: center;
   align-items: center;
   height: 200px;
-  min-width: 300px;
+  width: 300px;
   flex-grow: 1;
   position: relative;
   cursor: pointer;
+  margin: 20px;
 }
-
+@media only screen and (max-width: 600px) {
+  .programsContainer {
+    padding: 0;
+  }
+  .singleProgramContainer {
+    margin: 0;
+  }
+}
 .sp1,
 .sp2,
 .sp3 {
   background-position: center;
   background-size: cover;
+  border-radius: 10px;
 }
 .sp1 {
   background-image: url("../public/homepage/programs/2.jpg");
@@ -489,6 +547,7 @@ a:hover {
   background-color: black;
   position: absolute;
   opacity: 0.2;
+  border-radius: 10px;
 }
 .imageOverlay:hover {
   background-color: rgba(255, 255, 255, 0.5);
@@ -524,6 +583,11 @@ a:hover {
     background-color: rgb(42, 93, 155);
   }
 }
+@media only screen and (max-width: 950px) {
+  .imageContainer {
+    display: none;
+  }
+}
 
 .imageContainer {
   position: relative;
@@ -549,9 +613,13 @@ a:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 40px 20px;
+  padding: 40px 40px;
   display: flex;
   justify-content: space-evenly;
+}
+.footerLogoContainer {
+  position: relative;
+  margin-right: 20px;
 }
 .footerContainer p {
   margin: 0;
@@ -566,7 +634,7 @@ a:hover {
 }
 
 .footerColumn {
-  width: 33%;
+  width: 30%;
   margin: 0 20px;
 }
 .footerColumn .copyrightText {

@@ -31,7 +31,7 @@ const About = () => {
                     <h1 className={styles.pageHeader}>About Us</h1>
                 </div> */}
                 <div className={styles.bannerContainer}>
-                <Image src="/contactPage/contactBanner.jpg"
+                <Image src="/about/banner.jpg"
                 layout="fill"
                 objectFit="cover"
                 objectPosition="50% 48%"
@@ -50,17 +50,25 @@ const About = () => {
                                 <div className={styles.aboutHeaderImage}>
                                     <Image
                                     className="image" 
-                                    src="/programphoto1.jpeg"
+                                    src="/about/programs.jpg"
                                     layout="fill"
                                     objectFit="cover"
                                     />
                                 </div>
                             </div>
                             <div className={styles.aboutText}>
-                                <h1>Our Philosophy</h1>
-                                <p>We have developed a very unique teaching process which is called the Okuda Method. This method can develop players into true high-performance players, step-by-step.
-                                We believe that true high-performance is about continuing to develop fundamentals at every level, focusing on technical details, and pushing players beyond what they believe to be their physical and mental limit. We understand and respect the differences of each player and develop their specific strengths, technical needs, and their individual personality and confidence.
+                                <h1>Our Programs</h1>
+                                <p>We have programs running throughout the year. Stay up-to-date as we continue to develop our program further and spaces are often limited.
                                 </p>
+                                <Link href="/programs">
+                        
+                                        <Button
+                                        className={classes.button}
+                                        variant="contained"
+                                        >Our Programs</Button>
+                                       
+                               
+                                    </Link>
                             </div>
                         </div>
                         
@@ -87,7 +95,7 @@ const About = () => {
                                 <div className={styles.aboutHeaderImage}>
                                     <Image
                                     className="image" 
-                                    src="/programphoto1.jpeg"
+                                    src="/about/team.jpg"
                                     layout="fill"
                                     objectFit="cover"
                                     />

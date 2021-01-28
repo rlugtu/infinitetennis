@@ -40,7 +40,7 @@ const Team = () => {
                     <h1 className={styles.staffHeading}>Past Staff</h1>
                     <div className={styles.currentCoachesContainer}>
                         <div className={styles.singleCoachContainer}>
-                            <div className={styles.coachPicContainer}>
+                            {/* <div className={styles.coachPicContainer}>
                                 <Image 
                                     src='/coaches/coachPic.jpg'
                                     className={styles.coachPic}
@@ -48,55 +48,11 @@ const Team = () => {
                                     // width={300} 
                                     layout="fill"                               objectFit="cover"
                                 />     
-                            </div>
+                            </div> */}
                             <div className={styles.singleCoachDescription}>
-                                <h1>Name</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam quae dolores hic velit minima ad dicta quas. Aperiam vero excepturi facere atque totam consectetur officia qui aut unde laudantium.</p>
-                            </div>
-                        </div>
-                        <div className={styles.singleCoachContainer}>
-                            <div className={styles.coachPicContainer}>
-                                <Image 
-                                    src='/coaches/coachPic.jpg'
-                                    className={styles.coachPic}
-                                     // height={200}
-                                    // width={300} 
-                                    layout="fill"                                objectFit="cover"
-                                />     
-                            </div>
-                            <div className={styles.singleCoachDescription}>
-                                <h1>Name</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam quae dolores hic velit minima ad dicta quas. Aperiam vero excepturi facere atque totam consectetur officia qui aut unde laudantium.</p>
-                            </div>
-                        </div>
-                        <div className={styles.singleCoachContainer}>
-                            <div className={styles.coachPicContainer}>
-                                <Image 
-                                    src='/coaches/coachPic.jpg'
-                                    className={styles.coachPic}
-                                     // height={200}
-                                    // width={300} 
-                                    layout="fill"                               objectFit="cover"
-                                />     
-                            </div>
-                            <div className={styles.singleCoachDescription}>
-                                <h1>Name</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam quae dolores hic velit minima ad dicta quas. Aperiam vero excepturi facere atque totam consectetur officia qui aut unde laudantium.</p>
-                            </div>
-                        </div>
-                        <div className={styles.singleCoachContainer}>
-                            <div className={styles.coachPicContainer}>
-                                <Image 
-                                    src='/coaches/coachPic.jpg'
-                                    className={styles.coachPic}
-                                     // height={200}
-                                    // width={300} 
-                                    layout="fill"                                     objectFit="cover"
-                                />     
-                            </div>
-                            <div className={styles.singleCoachDescription}>
-                                <h1>Name</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem nam quae dolores hic velit minima ad dicta quas. Aperiam vero excepturi facere atque totam consectetur officia qui aut unde laudantium.</p>
+                                <h1>Takehiko Yasu</h1>
+                                <p>Yasu was Tatsumi’s right hand man for over 20 years until he decided to take a mid-career retirement in Tucson, Arizona. Yasu specialized in teaching the 12 and under age group. He is now hoping to coach his niece on the professional women’s tour, and hopes to see many Infinite Future Tennis players at the national USTA tournaments always held in Arizona at the end of the year.
+                                </p>
                             </div>
                         </div>
                     </div>

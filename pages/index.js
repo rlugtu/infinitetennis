@@ -54,13 +54,23 @@ const Index = ( {props} ) => {
       slidesToSlide: 1
     }
   }
-  const media = ['1','2','3','4']
+  const media = ['1','2','3','4','5','6','7','8','9','10','11']
   return (
     <div className="bodyContainer">
       <Navbar />
       <Banner />
       <div className="bodyContent">
+        <div className="philosophyContainer">
+        <h1>Our Philosophy</h1>
+          <p>We have developed a very unique teaching process which is called the Okuda Method. This method can develop players into true high-performance players, step-by-step.
+          We believe that true high-performance is about continuing to develop fundamentals at every level, focusing on technical details, and pushing players beyond what they believe to be their physical and mental limit. We understand and respect the differences of each player and develop their specific strengths, technical needs, and their individual personality and confidence.</p>
+        </div>
         <div className="programsContainer">
+        <Image src="/homepage/programsbackground.jpg"
+              layout="fill"
+              objectFit="cover"
+              className="programsBackground"
+              />
               <Link href="/programs">
                 <div className="singleProgramContainer sp1">
                   <div className="imageOverlay"></div>
@@ -74,13 +84,12 @@ const Index = ( {props} ) => {
                 </div>
               </Link>
               
-              <Link href="/about">
+              <Link href="/alumni">
                 <div className="singleProgramContainer sp3">
                   <div className="imageOverlay"></div>
-                  <h1 className="programText">Our Philosophy</h1>
+                  <h1 className="programText">Our Alumni</h1>
                 </div>
               </Link>
-              
             </div>
             
             <div 

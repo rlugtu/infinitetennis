@@ -1,6 +1,7 @@
 import { slide as Menu } from 'react-burger-menu'
 import {useState} from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import '@fortawesome/fontawesome-free/css/all.css';
 
@@ -15,9 +16,15 @@ const Navbar = () => {
     
     return (
         <div className="navBar">
+            <div className="navLogoContainer">
+                    <Image src="/navlogo.png" 
+                    layout="fill"
+                    objectFit="contain"/>
+            </div>
             <div className="navLogo">
-                <h2>Logo</h2>
+                {/* <h2>Logo</h2> */}
                 <h2 className="logoText">Infinite Future Tennis</h2>
+                
             </div>
             <div className="navOptions">
                 <Menu 
@@ -38,7 +45,9 @@ const Navbar = () => {
                         <a className="mobileNavLink">Contact</a>
                     </Link>
                 </Menu>
-                <ul className="navList">
+                
+            </div>
+            <ul className="navList">
                     <li>
                         <Link href="/">
                             <a className="navLink">Home</a>
@@ -58,6 +67,9 @@ const Navbar = () => {
                                 <Link href="/about">
                                     <a className="dropdownLink dropdownStart">About Us</a>
                                 </Link>
+                                <Link href="/programs">
+                                    <a  className="dropdownLink">Programs</a>
+                                </Link>
                                 <Link href="/team">
                                     <a className="dropdownLink">Our Team</a>
                                 </Link>
@@ -68,17 +80,17 @@ const Navbar = () => {
                             </div>
                         )}                      
                     </div>
-                    <li className="navLink">
+                    {/* <li className="navLink">
                         <Link href="/programs">
                             <a>Programs</a>
-                        </Link></li>                 
+                        </Link>
+                    </li>                  */}
                    <li>
                         <Link href="/contact">
                             <a className="navLink">Contact</a>
                         </Link>
                    </li> 
                 </ul>
-            </div>
         </div>
     )
 }

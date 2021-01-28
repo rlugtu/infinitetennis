@@ -12,7 +12,7 @@ const Banner = () => {
         slidesToScroll: 1
       };
       let images = [
-        "4","6","3","7"
+        "4","2","6","3","7"
       ]
 
       const responsive = {
@@ -38,7 +38,13 @@ const Banner = () => {
                 <h1 className={styles.bannerText}>Infinite Future Tennis</h1>
                 <h2 className={styles.bannerText2}>Home of Dedicated Tennis Players</h2>
             </div>
-         
+            <div className={styles.bannerLogoContainer}>
+                <Image src="/navlogo.png"
+                layout="fill"
+                objectFit="contain"
+                className={styles.bannerPic}
+                />
+            </div>
             <Carousel
                 responsive={responsive}
                 ssr

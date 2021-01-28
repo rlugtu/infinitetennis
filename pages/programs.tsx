@@ -18,7 +18,7 @@ const Programs = () => {
             <Navbar/>
             <div className={styles.pageContainer}>
             <div className={styles.bannerContainer}>
-                <Image src="/contactPage/contactBanner.jpg"
+                <Image src="/programsPics/banner.jpg"
                 layout="fill"
                 objectFit="cover"
                 objectPosition="50% 48%"
@@ -56,7 +56,7 @@ const Programs = () => {
                         onClick = {() => activateDescriptionFunc(programsText.pointplay.description)}>
                         <div className={styles.trainingPicContainer}>
                             <Image 
-                                src="/contactPage/contactBanner.jpg"
+                                src="/programsPics/pointplay.jpg"
                                 layout="fill"
                                 objectFit="cover"                
                             />

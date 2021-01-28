@@ -37,7 +37,7 @@ const ContactForm = () => {
     return (
         <div className={styles.contactFormContainer}>
             <h1>Get In Touch</h1>
-            <p>Please fill out this form and we will be in touch</p>
+            <p>Please fill out this form and we will get back to you soon</p>
             <form className={styles.contactForm} onSubmit={sendEmail}>
                 <label>Name</label>
                 <input className={styles.input} type="text" name="name" />
