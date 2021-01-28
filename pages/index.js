@@ -116,6 +116,7 @@ const Index = ( {props} ) => {
                       // height={200}
                       // width={300}
                       objectFit="cover"
+                      priority
                       />
                     ))}
                     {/* <SingleVideo /> */}

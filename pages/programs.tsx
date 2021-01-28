@@ -48,7 +48,8 @@ const Programs = () => {
                         <div className={styles.trainingPicContainer}>
                             <Image src="/programsPics/drills.jpg"
                                 layout="fill"
-                                objectFit="cover"                
+                                objectFit="cover"
+                                priority                
                             />
                         </div>
                         <h2>Drills</h2>
@@ -59,7 +60,8 @@ const Programs = () => {
                             <Image 
                                 src="/programsPics/pointplay.jpg"
                                 layout="fill"
-                                objectFit="cover"                
+                                objectFit="cover"
+                                priority                
                             />
                         </div>
                         <h2>Point Play</h2>
@@ -71,7 +73,8 @@ const Programs = () => {
                         <div className={styles.trainingPicContainer}>
                             <Image src="/programsPics/matchplay.jpg"
                                 layout="fill"
-                                objectFit="cover"                
+                                objectFit="cover"
+                                priority                
                             />
                         </div>
                         <h2>Match Play</h2>
