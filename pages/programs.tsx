@@ -69,7 +69,7 @@ const Programs = () => {
                         onClick = {() => activateDescriptionFunc(programsText.matchplay.description)}
                     >
                         <div className={styles.trainingPicContainer}>
-                            <Image src="/contactPage/contactBanner.jpg"
+                            <Image src="/programsPics/matchplay.jpg"
                                 layout="fill"
                                 objectFit="cover"                
                             />
