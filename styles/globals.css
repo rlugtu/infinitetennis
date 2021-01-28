@@ -138,12 +138,12 @@ li {
 }
 
 .navLink:hover {
-  font-weight: bold;
+  /* font-weight: bold; */
   background-color: rgb(45, 108, 184);
 }
 a:hover {
   color: white;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 
 .dropdown {
