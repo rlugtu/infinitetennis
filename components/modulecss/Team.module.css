@@ -145,6 +145,7 @@
 .singleCoachDescription {
   border-radius: 10px;
   color: rgb(50, 50, 50);
+  background-color: white;
 }
 .singleCoachContainer {
   border-bottom-left-radius: 10px;
@@ -155,7 +156,7 @@
 }
 .singleCoachDescription h1 {
   padding: 20px;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
   font-size: 1.6rem;
 }
 .singleCoachDescription p {
@@ -168,7 +169,9 @@
   position: relative;
 }
 .singleCoachName {
-  background-color: white;
+  background-color: rgb(142, 59, 70);
+  color: white;
+  text-align: center;
 }
 .coachDescription {
   height: 120px;
@@ -200,4 +203,25 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
+}
+@media only screen and (max-width: 600px) {
+  .singleCoachDescription {
+    padding: 0;
+  }
+  .singleCoachDescription h1 {
+    padding: 20px;
+  }
+  .singleCoachDescription p {
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+
+.pastCoachName {
+  background-color: rgb(142, 59, 70);
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
 }
