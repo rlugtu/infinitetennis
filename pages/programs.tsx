@@ -37,7 +37,8 @@ const Programs = () => {
                         <div className={styles.trainingPicContainer}>
                             <Image src="/programsPics/fitness.jpg"
                                 layout="fill"
-                                objectFit="cover"                
+                                objectFit="cover"
+                                priority               
                             />
                         </div>
                         <h2>Fitness</h2>

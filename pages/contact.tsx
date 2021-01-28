@@ -26,11 +26,10 @@ const Contact = () => {
                 objectFit="cover"
                 objectPosition="50% 48%"
                 className={styles.bannerPic}
-                
+                priority
                 />
                  <h1 className={styles.bannerText}>Contact Us</h1>
             </div>
-            {/* <Banner /> */}
             <div className={styles.contactContainer}>
                 <div className={styles.contactContent}>
                     <ContactForm />

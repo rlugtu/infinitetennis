@@ -19,7 +19,9 @@ const Navbar = () => {
             <div className="navLogoContainer">
                     <Image src="/navlogo.png" 
                     layout="fill"
-                    objectFit="contain"/>
+                    objectFit="contain"
+                    priority
+                    />
             </div>
             <div className="navLogo">
                 {/* <h2>Logo</h2> */}

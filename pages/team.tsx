@@ -17,7 +17,7 @@ const Team = () => {
                             className={styles.headCoachPic}
                             layout="fill"
                             objectFit="cover"
-
+                            priority
                         />
                     </div>
                     <div className={styles.headCoachDescription}>

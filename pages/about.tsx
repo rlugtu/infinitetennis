@@ -53,6 +53,7 @@ const About = () => {
                                     src="/about/programs.jpg"
                                     layout="fill"
                                     objectFit="cover"
+                                    priority
                                     />
                                 </div>
                             </div>

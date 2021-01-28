@@ -63,6 +63,7 @@ const Banner = () => {
                      layout="fill"
                      objectFit="cover"
                      className={styles.bannerPic}
+                     priority
                      />
                     </div> 
                   ))}
