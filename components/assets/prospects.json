@@ -13,16 +13,28 @@
             "pic":"laurenmchale.jpg"
         },
         {
-            "name": "Kaysee Orozco",
-            "bio": "Top junior in Eastern Section and played at Middlebury College",
-            "quote": "Tatsumi taught me invaluable lessons about discipline and commitment, instilling habits that I carry with me to this day. His program fosters a competitive, respectful environment full of high-performing players who can all attest to the notion that hard work pays off (and is a lot of fun too!",
-            "pic":"kayseeorozco.jpg"
-        },
-        {
             "name": "Christina Sisti",
             "bio": "Top junior in Eastern Section. Played at Tulane University",
             "quote": " Tatsumi was able to take my game to the next level. He is super patient and detail oriented; I believe he played a huge role in my transition from junior tennis to college tennis!",
             "pic":"christinasisti.jpg"
+        },
+        {
+            "name": "Greg Weksel",
+            "bio": "Played at Denison University and #1 singles for Dwight-Englewood High School",
+            "quote": "Tatsumi was my coach for several years shortly after moving to New Jersey from Japan. Any student would be hard pressed to find a more committed and knowledgeable coach to help hone their skills and support their tennis career. I went on to play collegiately at Denison University in Ohio and I now use much of what Tatsumi taught me in coaching my own students as a private coach in California",
+            "pic":"gregweksel.jpg"
+        },
+        {
+            "name": "Ashley Hess",
+            "bio": "Played #1 Singles at the Academy of the Holy Angels and is a current top player at Dartmouth College",
+            "quote": "Tatsumi is an amazing coach who has a genuine passion and love for the game. His program instilled in me the values of discipline and hard work that helped shape me into the player I am today.",
+            "pic" : "ashleyhess.jpg"
+        },
+        {
+            "name": "Kaysee Orozco",
+            "bio": "Top junior in Eastern Section and played at Middlebury College",
+            "quote": "Tatsumi taught me invaluable lessons about discipline and commitment, instilling habits that I carry with me to this day. His program fosters a competitive, respectful environment full of high-performing players who can all attest to the notion that hard work pays off (and is a lot of fun too!",
+            "pic":"kayseeorozco.jpg"
         },
         {
             "name": "Hibah Shaikh",

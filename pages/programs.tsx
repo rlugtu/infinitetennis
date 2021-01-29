@@ -113,7 +113,7 @@ const Programs = () => {
                 <p>Tentative Schedule. Contact us for pricing and detailed schedules on time slots</p>
                     <div className={styles.sessionContainer}>
                         <h1>
-                            Winter Session 10 weeks
+                            Winter Session 11 weeks
                         </h1>
                         <p>Start Date: January 4</p>
                         <p>End Date: March 21</p>
