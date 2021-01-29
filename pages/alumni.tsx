@@ -9,7 +9,7 @@ const Alumni = () => {
             <Navbar />
                 <div className={styles.contentContainer}>
                     <h1 className={styles.pageHeader}>Notable Alumni</h1>
-                    <p>Several former students are USTA junior sectional and national champions, successful professional players in the WTA and ATP tours, and successful recruits at top academic and athletic universities across the United States.</p>
+                    <p className={styles.pageDescription}>Several former students are USTA junior sectional and national champions, successful professional players in the WTA and ATP tours, and successful recruits at top academic and athletic universities across the United States.</p>
                     {Bios.alumni.map((player,i) => (
                         <Prospects 
                             {...player}
