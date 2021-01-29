@@ -34,10 +34,24 @@ const SingleCoach = (props) => {
             </div>                    
             <div className={styles.singleCoachDescription}>
                 <h1 className={styles.singleCoachName}>{props.name}</h1>
-                <p className={expanded ? styles.coachDescriptionAll: styles.coachDescription}>{props.description}</p>
+                
                
+                <div className={expanded ? styles.singleCoachBioAll: styles.singleCoachBio}>
+                    {props.highlights && (
+                        <div className={styles.highlightsContainer}>
+                        {props.highlights.map((highlight,i) => (
+                        <p className={styles.coachHighlight} id={i}>{highlight}</p>
+                        ))}
+                        </div>
+                    )}
+                     <p className={expanded ? styles.coachDescriptionAll: styles.coachDescription}>{props.description}</p>
+                </div>
+                
                 {/* <button onClick={()=> setExpanded(!expanded)}>click me</button> */}
             </div>
+            <div className={styles.expandIcon}
+            onClick={()=> setExpanded(!expanded)}
+            >
             {expanded ? <ExpandLessIcon 
                 className={classes.button}
                 onClick={()=> setExpanded(!expanded)}
@@ -45,6 +59,8 @@ const SingleCoach = (props) => {
                 className={classes.button}
                 onClick={()=> setExpanded(!expanded)}
                 />}
+            </div>
+            
         </div>
     )
 }

@@ -3,27 +3,52 @@
             {
                 "name":"Yukiko Okuda",
                 "description": "Yukiko Okuda, Tatsumi’s wife, has been by Tatsumi’s side for the many decades that they have been building up the business together. She is an accomplished doubles player, as a World Team Tennis national finalist for many years in a row, and she holds vast knowledge of the tennis game. She has specialized in teaching the 10 and under age group of kids and has helped countless kids build strong technical fundamentals as well as a strong work ethic",
-                "pic": "coachPic.jpg"
+                "pic": "coachPic.jpg",
+                "highlights":[
+                    "World Team Tennis national finalist"
+                ]
             },
             {
                 "name":"Akiko Okuda",
                 "description": "Akiko Okuda, Tatsumi’s daughter, has been in the tennis coaching business for 5 years. She has taught at other programs but has developed a renewed sense of appreciation for Tatsumi’s teaching methods and is committed to assisting Tatsumi’s program and keeping his legacy going. She was a top 5 junior in the Eastern section and top 60 in the nation. She played NCAA Division I tennis at Dartmouth College and was on the starting roster for singles and doubles for all 4 years. Akiko also played on the ITF professional tour for three years and earned a career high WTA singles ranking of #1137 and doubles ranking of #632.",
-                "pic": "akikookuda.jpg"
+                "pic": "akikookuda.jpg",
+                "highlights":[
+                    "Top 5 junior in eastern section",
+                    "Top 60 junior in the nation",
+                    "#1 singles & doubles at Dartmouth as a freshman",
+                    "Captain at Darmouth",
+                    "WTA rank of 1137 in singles",
+                    "WTA rank of #632 in doubles"
+                ]
             },
             {
                 "name":"Randy Esmera",
                 "description": "Randy Esmera has been coaching with Tatsumi for 8 years. Having trained in Tatsumi’s camp as a young player himself, he knows Tatsumi’s teaching methods very well. He was an accomplished high school tennis player on the Paramus Catholic boy’s team, playing the #1 spot. Randy is kind and patient and is well-liked by the players and is very highly regarded by the other coaches.",
-                "pic": "coachPic.jpg"
+                "pic": "coachPic.jpg",
+                "highlights":[
+                    "#1 singles at Paramus Catholic"
+                ]
             },
             {
                 "name":"Ryan Lugtu",
-                "description": "Ryan Lugtu has been coaching with Tatsumi for 6 years. He also trained at Tatsumi’s program since he was 10 years old. Ryan had prominent wins against top 10 Eastern players in the 16 and under, and 18 and under divisions, and achieved a ranking of #18 in the Eastern section. As the #1 player at Paramus Catholic High School, he reached the Bergen County tournament finals two times. He went on to play the #1 singles position at Hartford. Ryan has beautiful technique and is a great role model for the young tennis players. Ryan helps to bring fresh and creative ideas to the program.",
-                "pic": "coachPic.jpg"
+                "description": "Ryan Lugtu has been coaching with Tatsumi for 6 years. He also trained at Tatsumi’s program since he was 10 years old. Ryan had prominent wins against top 10 Eastern players in the 16 and under, and 18 and under divisions, and achieved a ranking of #18 in the Eastern section. As the #1 player at Paramus High School, he reached the Bergen County tournament finals two times. He went on to play the #1 singles position at Hartford. Ryan has beautiful technique and is a great role model for the young tennis players. Ryan helps to bring fresh and creative ideas to the program.",
+                "pic": "coachPic.jpg",
+                "highlights":[
+                    "Played 1st singles at Hartford University freshman year",
+                    "Top 20 eastern ranking in 16's and 18's",
+                    "Two time Bergen county finalist",
+                    "#1 singles at Paramus High School"
+                ]
             },
             {
                 "name":"Samantha Lugtu",
                 "description": "Samantha Lugtu has been teaching summer camps with Tatsumi for three years now. She also trained in Tatsumi’s program since she was 7 years old. Samantha was ranked #2 in the Eastern section in the 12 and under division. She is currently playing NCAA Division I tennis at Wagner College as the #1 singles and double player and supports the coaching effort during her school breaks. She brings a great youthful energy to the team.",
-                "pic":"samlugtu.jpg"
+                "pic":"samlugtu.jpg",
+                "highlights":[
+                    "#2 singles at Wagner College",
+                    "Top junior in the east as high as #2 (12 and under)",
+                    "#1 singles at Paramus Highschool and Paramus Catholic"
+                ]
             }
         ]
 }

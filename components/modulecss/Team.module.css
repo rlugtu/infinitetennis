@@ -159,7 +159,12 @@
   /* padding-bottom: 0; */
   font-size: 1.6rem;
 }
-.singleCoachDescription p {
+.coachDescription {
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.coachDescriptionAll {
   padding: 20px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -173,14 +178,30 @@
   color: white;
   text-align: center;
 }
+.singleCoachBio {
+  height: 160px;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
+.singleCoachBioAll {
+  height: 100%;
+  overflow: visible;
+}
+.highlightsContainer {
+  margin-top: 20px;
+}
+.coachHighlight {
+  padding: 0 20px;
+  color: rgb(42, 93, 155);
+  font-weight: bold;
+}
 .coachDescription {
-  height: 120px;
+  /* height: 120px; */
   background-color: white;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
 }
-
 .coachDescriptionAll {
   overflow: auto;
   /* height: 100%; */
@@ -198,7 +219,7 @@
   .singleCoachDescription h1 {
     padding: 20px;
   }
-  .singleCoachDescription p {
+  .coachDescriptionAll {
     padding: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -211,10 +232,13 @@
   .singleCoachDescription h1 {
     padding: 20px;
   }
-  .singleCoachDescription p {
+  .coachDescriptionAll {
     padding: 20px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+  .coachHighlight {
+    padding: 0 20px;
   }
 }
 
