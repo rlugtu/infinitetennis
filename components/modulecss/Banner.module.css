@@ -53,8 +53,8 @@
   flex-direction: column;
   justify-content: flex-end;
   margin: 0;
-  padding: 20px 0;
-  padding-left: 20px;
+  padding-left: 40px;
+  padding-bottom: 40px;
 }
 
 .bannerTextContainer h1 {
@@ -106,4 +106,8 @@
     margin: 0;
     color: white;
   }
+}
+
+.dots {
+  padding: 20px 0;
 }

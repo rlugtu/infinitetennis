@@ -56,6 +56,8 @@ const Banner = () => {
                 autoPlay ={true}
                 autoPlaySpeed={5000}
                 arrows={false}
+                dotListClass={styles.dots}
+
                 >
                   {images.map((image,i) => (
                      <div className={styles.bannerPicContainer}>
