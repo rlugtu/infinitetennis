@@ -91,11 +91,11 @@
 .alumniContainer {
   display: flex;
   flex-direction: column;
-  background-color: #8abae4;
+  background-color: rgb(250, 148, 65);
   width: 100%;
 }
 .teamContainer {
-  background-color: rgb(250, 148, 65);
+  background-color: #63a7e2;
 }
 .alumniContainer {
   background-color: rgb(184, 184, 184);
