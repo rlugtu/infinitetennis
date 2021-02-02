@@ -97,7 +97,7 @@ const Index = ( {props} ) => {
             
             <div 
             className= 'videoFeedContainer'>
-              <h1 className="videoHeader">Inside Our Program</h1>
+              <h1 className="videoHeader">Gallery</h1>
                 {/* <p>{props.deviceType}</p> */}
                 <Carousel
                   responsive={responsive}
@@ -128,7 +128,8 @@ const Index = ( {props} ) => {
             <div 
              className='testimonialsContainer'
             >
-              {/* <h1 className="testimonialsHeader">Testimonials</h1> */}
+              
+              <h1 className="testimonialsHeader">Testimonials</h1>
                 <Carousel
                   responsive={testimonialsResponsive}
                   ssr
