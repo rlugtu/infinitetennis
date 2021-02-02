@@ -6,7 +6,7 @@ import 'react-multi-carousel/lib/styles.css';
 import MobileDetect from "mobile-detect";
 import {useState} from 'react'
 import Link from 'next/link'
-
+import galleryPics from '../public/homepage/gallery/gallery.json'
 
 // Components
 import Navbar from '../components/Navbar.tsx'
@@ -22,15 +22,18 @@ const Index = ( {props} ) => {
     superLargeDesktop: {
       // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
-      items: 4
+      items: 4,
+      slidesToSlide: 4
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4
+      items: 4,
+      slidesToSlide: 4
     },
     tablet: {
       breakpoint: { max: 1024, min: 600 },
-      items: 3
+      items: 3,
+      slidesToSlide: 3
     },
     mobile: {
       breakpoint: { max: 600, min: 0 },
@@ -54,7 +57,7 @@ const Index = ( {props} ) => {
       slidesToSlide: 1
     }
   }
-  const media = ['1','2','3','4','5','6','7','8','9','10','11']
+  const media = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14']
   return (
     <div className="bodyContainer">
       <Navbar />
@@ -109,7 +112,7 @@ const Index = ( {props} ) => {
                   transitionDuration={100}
                   slidesToSlide={1}
                   >
-                    {media.map((el,i) => (
+                    {galleryPics.map((el,i) => (
                       <Image 
                       src={'/homepage/gallery/' + el + '.jpg'}
                       layout="fill"

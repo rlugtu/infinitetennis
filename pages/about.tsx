@@ -111,7 +111,7 @@ const About = () => {
                                 <div className={styles.aboutHeaderImage}>
                                     <Image
                                     className="image" 
-                                    src="/programphoto1.jpeg"
+                                    src="/about/alumni.jpg"
                                     layout="fill"
                                     objectFit="cover"
                                     />

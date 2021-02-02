@@ -80,12 +80,12 @@ const Programs = () => {
                         <h2>Match Play</h2>
                     </div>
                 </div>
-                {activateDescription && (
+                {/* {activateDescription && (
                     <DevelopmentText
                     description = {description}
                     setActivateDescription={setActivateDescription}
                     />
-                )}
+                )} */}
             </div>
            <div className={styles.levelAndSchedule}>
                 <div className={styles.levelsContainer}>
