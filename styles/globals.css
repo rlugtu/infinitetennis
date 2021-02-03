@@ -468,7 +468,7 @@ a:hover {
 } */
 .carousel-item {
   position: relative;
-  min-height: 200px;
+  min-height: 220px;
 }
 .react-multi-carousel-track {
   height: 100%;
