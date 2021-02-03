@@ -2,7 +2,7 @@
     "alumni": [
         {
             "name": "Christina McHale",
-            "bio": "Reached WTA #24 in singles #35 in doubles",
+            "bio": "Highest WTA Ranking of #24 in singles and #35 in doubles",
             "quote": "I was very lucky to find Tatsumi in the early stages of my development as a player. All the hours we spent doing repetition drills really helped shape my game. In the group sessions he created such a positive environment to work hard and we all pushed each other every time to get better. I’ll never forget how competitive our “ringring” games got  Tatsumi put his whole heart and soul into helping every player. I’m very thankful for the time I spent working with him!",
             "pic": "christinamchale.jpg"
         },
@@ -11,6 +11,12 @@
             "bio": "Formerly a top 5 Junior in the Nation. Top 20 individually ranked NCAA Division I player at Princeton University and UNC",
             "quote": "I have such wonderful memories from training with Tatsumi. He was so dedicated to our careers and cared so much. I remember vividly our training at 6am before school and our 7-10pm Friday night clinics. He’s truly one of a kind and helped build my foundation for my junior and college career.",
             "pic":"laurenmchale.jpg"
+        },
+        {
+            "name": "Paul Jacobson",
+            "bio": "Formerly top 5 ranked Junior in Eastern Section, 88th nationally. NCAA Division I individual ranking of #68 and ranked 8th in all time wins in Indiana University history (88 wins). Scored a win over Marcos Daniel (ATP #98) and played to 3 sets with Stan Warwinka in 2001",
+            "quote": "Tatsumi was my coach starting when I was 12 years old. We started working together shortly after he moved to New Jersey from Japan. Tatsumi was excellent in his knowledge about technique and form but also fitness. I had a one handed backhand, which was rare at the time and remains relatively rare in the tennis world. We worked together for years to get the form, grip and technique right until I was able to hit the shot correctly",
+            "pic": "pauljacobson.jpg"
         },
         {
             "name": "Christina Sisti",
@@ -38,7 +44,7 @@
         },
         {
             "name": "Hibah Shaikh",
-            "bio": "Top 10 in the Nation in 18 in under. Plays at University of Virginia. Currently ranked #103 in ITF Juniors",
+            "bio": "Top 10 in the Nation in 18 and under. Plays at University of Virginia. Currently ranked #103 in ITF Juniors",
             "quote": "I trained with Tatsumi for about 3 years when I was a younger player and can honestly say it sparked my interest to play tennis in the future as a career. Tatsumi was extremely disciplined and had a program sheet that was followed for everyday planning what drills we would do and who would play points together. The group also allowed me to make lifelong friends. I learned a lot from him about my technique, footwork, and the importance of taking care of your body!!",
             "pic" : "hibahshaikh.jpg"
         },
@@ -48,11 +54,7 @@
             "quote": "What I loved about Tatsumi’s program/teaching was how much he cares about his students. He will always find the time to coach all of his students and give them the attention/advice that they need to succeed. I enjoyed my time with him and the other coaches so much and formed relationships with them that will last a lifetime. I couldn’t be more grateful for what he had done for me, I wouldn’t be the player or person I am today without him.",
             "pic":"riyaravi.jpg"
         },
-        {
-            "name": "Paul Jacobson",
-            "bio": "Formerly top 5 ranked Junior in Eastern Section, 88th nationally.At Indiana University reached an NCAA Division I individual ranking of #68 and ranked 8th in all time wins in Indiana University history with 88 wins in four years.Scored a win over Marcos Daniel who had a protected ATP ranking of #98 and played to 3 sets with Stan Warwinka in 2001",
-            "quote": "Tatsumi was my coach starting when I was 12 years old. We started working together shortly after he moved to New Jersey from Japan. Tatsumi was excellent in his knowledge about technique and form but also fitness. I had a one handed backhand, which was rare at the time and remains relatively rare in the tennis world. We worked together for years to get the form, grip and technique right until I was able to hit the shot correctly"
-        },
+       
         {
             "name": "Mitchell Gouzenko",
             "bio": "Played #1 doubles at Bergen County Academies",

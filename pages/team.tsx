@@ -39,22 +39,13 @@ const Team = () => {
                     </div>
                     <h1 className={styles.staffHeading}>Past Staff</h1>
                     <div className={styles.currentCoachesContainer}>
-                        <div className={styles.singleCoachContainer}>
-                            {/* <div className={styles.coachPicContainer}>
-                                <Image 
-                                    src='/coaches/coachPic.jpg'
-                                    className={styles.coachPic}
-                                     // height={200}
-                                    // width={300} 
-                                    layout="fill"                               objectFit="cover"
-                                />     
-                            </div> */}
-                            <div className={styles.singleCoachDescription}>
-                                <h1 className={styles.pastCoachName}>Takehiko Yasu</h1>
-                                <p className={styles.coachDescriptionAll}>Yasu was Tatsumi’s right hand man for over 20 years until he decided to take a mid-career retirement in Tucson, Arizona. Yasu specialized in teaching the 12 and under age group. He is now hoping to coach his niece on the professional women’s tour, and hopes to see many Infinite Future Tennis players at the national USTA tournaments always held in Arizona at the end of the year.
-                                </p>
-                            </div>
-                        </div>
+                          
+                            {CoachInfo.past.map((coach,i) => (
+                            <SingleCoach
+                            id={i}
+                            {...coach} 
+                            />
+                        ))}
                     </div>
                 </div>
                 

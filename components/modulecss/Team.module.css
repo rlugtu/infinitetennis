@@ -76,7 +76,7 @@
 }
 .headCoachDescription h2 {
   font-size: 1.8rem;
-  color: rgb(142, 59, 70);
+  color: #63a7e2;
 }
 .headCoachPic {
   border-top-left-radius: 10px;
@@ -174,7 +174,7 @@
   position: relative;
 }
 .singleCoachName {
-  background-color: rgb(142, 59, 70);
+  background-color: #63a7e2;
   color: white;
   text-align: center;
 }
@@ -192,7 +192,7 @@
 }
 .coachHighlight {
   padding: 0 20px;
-  color: rgb(42, 93, 155);
+  color: rgb(142, 59, 70);
   font-weight: bold;
 }
 .coachDescription {

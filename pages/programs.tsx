@@ -120,7 +120,7 @@ const Programs = () => {
                     </div>
                     <div className={styles.sessionContainer}>
                         <h1>
-                            Spring Session 10 weeks
+                            Spring Session 11 weeks
                         </h1>
                         <p>Start Date: March 22</p>
                         <p>End Date: May 30</p>
