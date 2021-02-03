@@ -14,9 +14,9 @@ const About = () => {
             width: 200,
             height: 50,
             cursor: 'pointer',
-            backgroundColor: "#8f3b46",
+            backgroundColor: "#2a5d9b",
             '&:hover':{
-                color: '#8f3b46',
+                color: '#2a5d9b',
             },
             marginTop:20,
         }

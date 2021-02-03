@@ -95,10 +95,10 @@
   width: 100%;
 }
 .teamContainer {
-  background-color: #63a7e2;
+  background-color: #8f3b46;
 }
 .alumniContainer {
-  background-color: rgb(184, 184, 184);
+  background-color: #63a7e2;
 }
 .aboutHeader {
   display: flex;
@@ -137,7 +137,7 @@
 }
 .aboutText p {
   margin-top: 10px;
-  color: rgb(50, 50, 50);
+  color: rgb(255, 255, 255);
 }
 .aboutText h1 {
   font-size: 3.5rem;
