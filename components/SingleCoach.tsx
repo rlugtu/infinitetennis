@@ -22,7 +22,8 @@ const SingleCoach = (props) => {
 
     return (
         <div className={styles.singleCoachContainer}>
-            <div className={styles.coachPicContainer}>
+            {props.pic && (
+                <div className={styles.coachPicContainer}>
                 <Image 
                     src={'/coaches/' + props.pic}
                     className={styles.coachPic}
@@ -31,7 +32,8 @@ const SingleCoach = (props) => {
                     layout="fill"                          
                     objectFit="cover"
                 />     
-            </div>                    
+            </div>
+            )}                
             <div className={styles.singleCoachDescription}>
                 <h1 className={styles.singleCoachName}>{props.name}</h1>
                 
