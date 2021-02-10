@@ -12,7 +12,7 @@ const Banner = () => {
         slidesToScroll: 1
       };
       let images = [
-        "1","7","2","4","6","3"
+        "1","7","2","4","6","8","3"
       ]
 
       const responsive = {
