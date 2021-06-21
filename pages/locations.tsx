@@ -28,7 +28,7 @@ const Locations = () => {
                     </div>
                     <div className={styles.locationTextBergenfield}>
                         <h1>Bergenfield Tennis Club</h1>
-                        <p>“Bergenfield Tennis Club -  A private tennis club with 4 outdoor green clay courts, operated by Infinite Future Tennis Academy with the assistance of the town of Bergenfield. Open time will be on the weekends for $16/hr. Soft opening June 21st, 2021. Date of opening to the public to be announced.</p>
+                        <p>Bergenfield Tennis Club -  A private tennis club with 4 outdoor green clay courts, operated by Infinite Future Tennis Academy with the assistance of the town of Bergenfield. Open time will be on the weekends for $16/hr. Soft opening June 21st, 2021. Date of opening to the public to be announced.</p>
                         <p className={styles.locationAddress}>Bergenfield Tennis Club at Pelham Pl, Bergenfield, NJ 07621</p>
                     </div>
                 </div>
