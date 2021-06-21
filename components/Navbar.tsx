@@ -52,6 +52,9 @@ const Navbar = () => {
                     <Link href="/contact">
                         <a className="mobileNavLink">Contact</a>
                     </Link>
+                    <Link href="/locations">
+                        <a className="mobileNavLink">Locations</a>
+                    </Link>
                 </Menu>
                 
             </div>
@@ -96,6 +99,11 @@ const Navbar = () => {
                    <li>
                         <Link href="/contact">
                             <a className="navLink">Contact</a>
+                        </Link>
+                   </li> 
+                   <li>
+                        <Link href="/locations">
+                            <a className="navLink">Locations</a>
                         </Link>
                    </li> 
                 </ul>

@@ -39,8 +39,8 @@ const Contact = () => {
                         <p>Email us at:</p>
                         <p>paumokuda@gmail.com </p>
                         <h2 className={styles.location}>Current Camp Locations:</h2>
-                        <p>Haworth Country Club</p>
-                        <p>Waldwick Covered Courts</p>
+                        <p>Bergenfield Tennis Club</p>
+                        <p>Paramus Catholic High School</p>
                     </div>
                 </div>
                 

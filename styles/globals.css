@@ -690,3 +690,6 @@ a:hover {
   cursor: pointer;
   font-weight: 600;
 }
+.locationsContainer {
+  margin-top: 70px;
+}

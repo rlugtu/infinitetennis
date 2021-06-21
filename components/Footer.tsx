@@ -24,9 +24,9 @@ const Footer = () => {
             </div>
             <div className="footerColumn">
                 <h2>Contact</h2>
-                <p>Location:</p>
-                <p>Haworth Country Club</p>
-                <p>Waldwick Covered Courts</p>
+                <p>Current Locations:</p>
+                <p>Bergenfield Tennis Club</p>
+                <p>Paramus Catholic High School</p>
                 <Link href="/contact"><p className="footerLink">Connect with us here</p></Link>
             </div>
         </div>
